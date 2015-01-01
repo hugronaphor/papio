@@ -27,7 +27,7 @@ function twerklist_core_node_view($node, $view_mode, $langcode) {
 
   switch ($view_mode) {
     case 'teaser':
-      case 'node_related':
+    case 'node_related':
 
       // Link the image to related content.
       // @todo There should be a better way?!

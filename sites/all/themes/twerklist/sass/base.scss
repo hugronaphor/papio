@@ -129,7 +129,7 @@ nav {
 .basic-list {
   .view-content {
     .views-row {
-      width: 33.107%;
+      width: 33.1%;
       box-sizing: border-box;
       //float:left;
       display: inline-block;
@@ -256,10 +256,47 @@ nav {
   }
 }
 
-.rate-thumbs-up-down-btn-up,
-.rate-user .rate-thumbs-up-down-btn-up.rate-voted{
-  //background-image: url("../images/thumbs_up.png");
+// -------
+
+/*.rate-user .rate-thumbs-up-down-btn-down {
+    background: url("../images/rate_thumbs.png") 0px -72px;
 }
+
+
+.rate-user .rate-thumbs-up-down-btn-down:hover {
+    background: url("../images/rate_thumbs.png") 0px -96px;
+}*/
+
+
+
+// ----------
+
+.rate-thumbs-up-down-btn-up {
+  background: url("../images/rate_thumbs.png") no-repeat 0px 0px;
+  /*background: url(thumbs.png) no-repeat 0 0;*/
+}
+.rate-user .rate-thumbs-up-down-btn-up {
+  /*background: url(thumbs.png) no-repeat 0 -24px;*/
+  background: url("../images/rate_thumbs.png") no-repeat 0px -48px;
+}
+.rate-user .rate-thumbs-up-down-btn-up.rate-voted {
+  background: url("../images/rate_thumbs.png") no-repeat 0px 0px;
+}
+
+.rate-thumbs-up-down-btn-down {
+  background: url("../images/rate_thumbs.png") no-repeat 0px -72px;
+  /*background: url(thumbs.png) no-repeat 0 -48px;*/
+}
+.rate-user .rate-thumbs-up-down-btn-down {
+  background: url("../images/rate_thumbs.png") no-repeat 0px -96px;
+  /*background: url(thumbs.png) no-repeat 0 -72px;*/
+}
+.rate-user .rate-thumbs-up-down-btn-down.rate-voted {
+  background: url("../images/rate_thumbs.png") no-repeat 0px -72px;
+  /*background: url(thumbs.png) no-repeat 0 -48px;*/
+}
+
+
 
 
 .footer {
