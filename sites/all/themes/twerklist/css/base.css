@@ -1278,6 +1278,49 @@ nav #main-menu li a:hover, nav #main-menu li a.active {
   background-position: 0 0;
 }
 
+.pane-node-related-node-related .pane-title,
+.pane-node-related-most-popular .pane-title,
+.basic-list .pane-title {
+  text-align: center;
+  height: 40px;
+  overflow: hidden;
+  line-height: 1.32353em;
+  margin: 15px 0;
+  position: relative;
+}
+.pane-node-related-node-related .pane-title span,
+.pane-node-related-most-popular .pane-title span,
+.basic-list .pane-title span {
+  color: #222;
+  background-color: #f9f9f9;
+  padding: 0 .5em;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+.pane-node-related-node-related .pane-title span:after, .pane-node-related-node-related .pane-title span:before,
+.pane-node-related-most-popular .pane-title span:after,
+.pane-node-related-most-popular .pane-title span:before,
+.basic-list .pane-title span:after,
+.basic-list .pane-title span:before {
+  content: '';
+  position: absolute;
+  border-top: 5px solid #222;
+  top: 45%;
+  width: 100%;
+}
+.pane-node-related-node-related .pane-title span:before,
+.pane-node-related-most-popular .pane-title span:before,
+.basic-list .pane-title span:before {
+  right: 100%;
+}
+.pane-node-related-node-related .pane-title span:after,
+.pane-node-related-most-popular .pane-title span:after,
+.basic-list .pane-title span:after {
+  left: 100%;
+}
+
 .basic-list .view-content .views-row {
   width: 33.1%;
   box-sizing: border-box;
@@ -1343,7 +1386,17 @@ nav #main-menu li a:hover, nav #main-menu li a.active {
 }
 .base-node .panel-2col .panel-col-first .pane-rate-widget {
   float: right;
-  margin-top: 15px;
+  margin-top: 20px;
+}
+.base-node .panel-2col .panel-col-first .pane-rate-widget .percent {
+  line-height: 30px;
+}
+.base-node .panel-2col .panel-col-first .field-name-body {
+  margin: 15px 0;
+  font-family: "Lato",Arial,Verdana,"Bitstream Vera Sans",sans-serif;
+  font-size: 20px;
+  background: #ddd;
+  padding: 3px 0 3px 10px;
 }
 .base-node .panel-2col .panel-col-last {
   clear: none;
@@ -1351,11 +1404,11 @@ nav #main-menu li a:hover, nav #main-menu li a.active {
   width: 33.33333%;
   margin-left: 66.66667%;
   margin-right: -100%;
+  padding-left: 10px;
 }
 .base-node .panel-2col .panel-col-last .pane-node-related-node-related .pane-title,
 .base-node .panel-2col .panel-col-last .pane-node-related-most-popular .pane-title {
   margin-bottom: 15px;
-  left: 20px;
   position: relative;
 }
 .base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row,
@@ -1364,7 +1417,7 @@ nav #main-menu li a:hover, nav #main-menu li a.active {
 }
 .base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row header,
 .base-node .panel-2col .panel-col-last .pane-node-related-most-popular .view-content .views-row header {
-  width: 60%;
+  width: 67%;
   float: right;
 }
 .base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row header h2,
@@ -1375,13 +1428,15 @@ nav #main-menu li a:hover, nav #main-menu li a.active {
 }
 .base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row .field-name-field-video-single,
 .base-node .panel-2col .panel-col-last .pane-node-related-most-popular .view-content .views-row .field-name-field-video-single {
-  left: 20px;
   position: relative;
   width: 30%;
 }
 .base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row .field-name-field-video-single img,
 .base-node .panel-2col .panel-col-last .pane-node-related-most-popular .view-content .views-row .field-name-field-video-single img {
   width: 100%;
+}
+.base-node .panel-2col .panel-col-last .pane-node-related-node-related {
+  margin-bottom: 30px;
 }
 
 .rate-widget-thumbs_up_down ul {
