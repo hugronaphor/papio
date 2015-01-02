@@ -30,9 +30,9 @@
   background: url(thumbs.png) no-repeat 0 -24px;
   float: right;
 }
-.rate-user .rate-thumbs-up-down-btn-up.rate-voted {
+/*.rate-user .rate-thumbs-up-down-btn-up.rate-voted {
   background: url(thumbs.png) no-repeat 0 0;
-}
+}*/
 .rate-widget-thumbs_up_down .thumb-up a {
   float: right;
 }
@@ -46,9 +46,9 @@
 .rate-user .rate-thumbs-up-down-btn-down {
   background: url(thumbs.png) no-repeat 0 -72px;
 }
-.rate-user .rate-thumbs-up-down-btn-down.rate-voted {
+/*.rate-user .rate-thumbs-up-down-btn-down.rate-voted {
   background: url(thumbs.png) no-repeat 0 -48px;
-}
+}*/
 .rate-thumbs-up-down-rating-up {
   display: inline-block;
   width: 45px;
