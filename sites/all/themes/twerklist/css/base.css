@@ -1352,29 +1352,35 @@ nav #main-menu li a:hover, nav #main-menu li a.active {
   margin-left: 66.66667%;
   margin-right: -100%;
 }
-.base-node .panel-2col .panel-col-last .pane-node-related-node-related .pane-title {
+.base-node .panel-2col .panel-col-last .pane-node-related-node-related .pane-title,
+.base-node .panel-2col .panel-col-last .pane-node-related-most-popular .pane-title {
   margin-bottom: 15px;
   left: 20px;
   position: relative;
 }
-.base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row {
+.base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row,
+.base-node .panel-2col .panel-col-last .pane-node-related-most-popular .view-content .views-row {
   margin-bottom: 15px;
 }
-.base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row header {
+.base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row header,
+.base-node .panel-2col .panel-col-last .pane-node-related-most-popular .view-content .views-row header {
   width: 60%;
   float: right;
 }
-.base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row header h2 {
+.base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row header h2,
+.base-node .panel-2col .panel-col-last .pane-node-related-most-popular .view-content .views-row header h2 {
   font-size: 18px;
   margin: 0;
   padding: 0;
 }
-.base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row .field-name-field-video-single {
+.base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row .field-name-field-video-single,
+.base-node .panel-2col .panel-col-last .pane-node-related-most-popular .view-content .views-row .field-name-field-video-single {
   left: 20px;
   position: relative;
   width: 30%;
 }
-.base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row .field-name-field-video-single img {
+.base-node .panel-2col .panel-col-last .pane-node-related-node-related .view-content .views-row .field-name-field-video-single img,
+.base-node .panel-2col .panel-col-last .pane-node-related-most-popular .view-content .views-row .field-name-field-video-single img {
   width: 100%;
 }
 

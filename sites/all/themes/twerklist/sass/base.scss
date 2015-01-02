@@ -124,8 +124,6 @@ nav {
   }
 }
 
-
-
 .basic-list {
   .view-content {
     .views-row {
@@ -222,7 +220,8 @@ nav {
       width: 33.33333%;
       margin-left: 66.66667%;
       margin-right: -100%;
-      .pane-node-related-node-related{
+      .pane-node-related-node-related,
+      .pane-node-related-most-popular {
         .pane-title {
           margin-bottom: 15px;
           left: 20px;
