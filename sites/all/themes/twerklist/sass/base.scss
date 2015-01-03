@@ -38,9 +38,17 @@ a:hover {
 a:active {color:#0000FF;}  /* selected link */
 
 .page-wrapper {
-  width: 1170px;
-  margin: auto;
+/*  width: 1170px;
+  margin: auto;*/
 }
+
+
+@media (min-width: 1200px) {
+  .page-wrapper {
+    width: 1170px;
+  }
+}
+
 
 header {
 
@@ -174,7 +182,7 @@ nav {
 
   .view-content {
     .views-row {
-      width: 33.1%;
+      width: 33%;
       box-sizing: border-box;
       //float:left;
       display: inline-block;
@@ -310,7 +318,7 @@ nav {
           }
         }
       }
-      
+
       .pane-node-related-node-related {
         margin-bottom: 30px;
       }

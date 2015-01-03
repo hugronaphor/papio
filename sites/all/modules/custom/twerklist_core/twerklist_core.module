@@ -64,7 +64,7 @@ function twerklist_core_css_alter(&$css) {
 
 function twerklist_core_preprocess_html(&$vars) {
 
-  $element = array(
+  $bing_tag = array(
     '#tag' => 'meta', // The #tag is the html tag - <link />
     '#attributes' => array(
       'name' => 'msvalidate.01',
@@ -72,5 +72,5 @@ function twerklist_core_preprocess_html(&$vars) {
     ),
   );
 
-  drupal_add_html_head($element, 'bing_search_index');
+  drupal_add_html_head($bing_tag, 'bing_search_index');
 }
