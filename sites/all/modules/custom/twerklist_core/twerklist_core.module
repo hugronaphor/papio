@@ -61,3 +61,16 @@ function twerklist_core_css_alter(&$css) {
   // Get rif of thumbs-up-down.css file.
   unset($css[drupal_get_path('module', 'rate') . '/templates/thumbs-up-down/thumbs-up-down.css']);
 }
+
+function twerklist_core_preprocess_html(&$vars) {
+
+  $element = array(
+    '#tag' => 'meta', // The #tag is the html tag - <link />
+    '#attributes' => array(
+      'name' => 'msvalidate.01',
+      'content' => 'CD556FD9720B0D6A617B1DF54833ECF7',
+    ),
+  );
+
+  drupal_add_html_head($element, 'bing_search_index');
+}
