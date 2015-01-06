@@ -74,3 +74,54 @@ function twerklist_core_preprocess_html(&$vars) {
 
   drupal_add_html_head($bing_tag, 'bing_search_index');
 }
+
+/**
+ * Implements hook_field_extra_fields().
+ */
+function twerklist_core_field_extra_fields() {
+  
+    $extra['node']['article'] = array(
+      'display' => array(
+        'article_bottom_info' => array(
+          'label' => t('Bottom Info'),
+          'description' => t('Article Bottom Info'),
+          'weight' => 0,
+        ),
+      ),
+    );
+
+  return $extra;
+}
+
+/**
+ * Implements hook_entity_view().
+ */
+function twerklist_core_entity_view($entity, $type, $view_mode, $langcode) {
+  $node_types = array('article');
+
+  if (in_array($entity->type, $node_types) && $view_mode == 'full') {
+    $entity->content['article_bottom_info'] = array(
+      '#markup' => _twerklist_core_get_bottom_info($entity),
+      '#prefix' => '<div class="article_bottominfo_extra">',
+      '#suffix' => '</div>',
+    );
+  }
+}
+
+
+/**
+ * @todo Double call, fix it.
+ */
+function _twerklist_core_get_bottom_info($entity) {  
+  $fields = array('body', 'field_music_in_video');
+  $content = array();
+  
+  foreach ($fields as $field_name) {
+    $field_data = field_get_items('node', $entity, $field_name);
+    if (is_array($field_data)) {
+      $content[] = field_view_field('node', $entity, $field_name, 'full');
+    }
+  }
+  
+  return render($content);
+}
