@@ -1420,6 +1420,9 @@ nav #main-menu li a:hover, nav #main-menu li a.active {
 .base-node .panel-2col .panel-col-first .field-name-field-music-in-video a {
   color: #777;
 }
+.base-node .panel-2col .panel-col-first .media-vine-video {
+  text-align: center;
+}
 .base-node .panel-2col .panel-col-last {
   clear: none;
   float: left;
