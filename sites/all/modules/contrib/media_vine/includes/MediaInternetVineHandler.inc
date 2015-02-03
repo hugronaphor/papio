@@ -41,7 +41,9 @@ class MediaInternetVineHandler extends MediaInternetBaseHandler {
     $file = file_uri_to_object($uri, TRUE);
     // Try to default the file name to the video's title.
     if (empty($file->fid) && $info = $this->getOEmbed()) {
-      $file->filename = truncate_utf8($info['data']['records'][0]['description'], 255);
+      // Remove non-alphanumeric characters (e.g: 😍)
+      $vine_description = preg_replace('/[^a-z\d ]/i', '', check_plain($info['data']['records'][0]['description']));
+      $file->filename = truncate_utf8($vine_description, 255);
     }
 
     return $file;

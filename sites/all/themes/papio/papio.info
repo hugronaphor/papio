@@ -1,4 +1,4 @@
-name 		= TwerkList
+name 		= Papio
 description = Site theme based on Circle theme
 core        = 7.x
 base theme	= circle

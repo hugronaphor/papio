@@ -2,64 +2,177 @@
 
 /**
  * @file
- * Main TwerkList Core file.
+ * Main Papio Core file.
  */
 
 /**
- * Implements hook_entity_info_alter().
+ * Implements hook_menu().
  */
-function twerklist_core_entity_info_alter(&$entity_info) {
-  $entity_info['node']['view modes']['node_related'] = array(
-    'label' => t('Node Related'),
-    'custom settings' => TRUE,
+function papio_core_menu() {
+  $items['admin/config/general_papio_settings'] = array(
+    'title' => 'Global Papio Settings',
+    'type' => MENU_LOCAL_TASK,
+    'description' => "Configure your sitewide Papio settings.",
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('papio_core_admin_form'),
+    'access arguments' => array('administer site'),
+    'file' => 'papio_core.admin.inc',
+    'weight' => 5,
   );
 
-  $entity_info['file']['view modes']['node_related'] = array(
-    'label' => t('Node Related'),
-    'custom settings' => TRUE,
+  return $items;
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function papio_core_block_info() {
+  $blocks = array();
+
+  $blocks['papio_footer'] = array(
+    'info' => t('Papio footer block'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+
+  $blocks['papio_bottom_header'] = array(
+    'info' => t('Papio bottom header block'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function papio_core_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'papio_footer':
+
+      $vars = array();
+      $footer_vars = array(
+        'footer_line_1',
+        'footer_phone',
+        'footer_line_2',
+        'footer_facebook_site_url',
+        'footer_twitter_site_url',
+        'footer_youtube_site_url',
+        'footer_credits',
+      );
+
+      foreach ($footer_vars as $var_name) {
+        if ($var = variable_get($var_name)) {
+          $vars[$var_name] = $var;
+        }
+      }
+
+      $block['content'] = theme('papio_footer', $vars);
+      break;
+
+    case 'papio_bottom_header':
+      $vars = _papio_core_get_social_data();
+      $vars['bows_count'] = _papio_core_count_bows();
+      $vars['count_block_title'] = variable_get('count_block_title');
+      $block['content'] = theme('papio_bottom_header', $vars);
+      break;
+  }
+
+  return $block;
+}
+
+/**
+ * Helper funtion.
+ * 
+ * Detect the total number of bows.
+ * @todo: Cache. Join Article type and check for bows:?
+ */
+function _papio_core_count_bows() {
+
+  $query = db_select('node', 'n')
+    ->fields('n')
+    ->condition('type', 'article')
+    ->condition('status', 1);
+  $bows_count = $query->execute()->rowCount();
+
+  if ($bows_count) {
+    $bows_count_array = str_split($bows_count);
+
+    $bows_count_array_count = count($bows_count_array);
+
+    if ($bows_count_array_count < 4) {
+      for ($i = 1; $i <= 4 - $bows_count_array_count; $i++) {
+        $additional_zero[] = 0;
+      }
+    }
+
+    if (isset($additional_zero)) {
+      $bows_count_array = array_merge($additional_zero, $bows_count_array);
+    }
+  }
+
+  return $bows_count_array;
+}
+
+/**
+ * Helper function to retrieve the social buttons data.
+ *
+ * @todo Re-thing the logic. Be beautiful.
+ */
+function _papio_core_get_social_data() {
+  static $vars = array();
+  if (!empty($vars)) {
+    return $vars;
+  }
+  $footer_vars = array(
+    'footer_facebook_site_url',
+    'footer_twitter_site_url',
+    'footer_youtube_site_url',
+  );
+
+  foreach ($footer_vars as $var_name) {
+    if ($var = variable_get($var_name)) {
+      $vars[$var_name] = $var;
+    }
+  }
+
+  return $vars;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function papio_core_theme($existing, $type, $theme, $path) {
+  return array(
+    'papio_footer' => array(
+      'template' => 'papio-footer',
+      'arguments' => array('vars' => NULL),
+      'path' => $path . '/theme',
+    ),
+    'papio_bottom_header' => array(
+      'template' => 'papio-bottom-header',
+      'arguments' => array('vars' => NULL),
+      'path' => $path . '/theme',
+    ),
   );
 }
 
 /**
- * Implent hook_node_view()
+ * Implements hook_node_view().
  */
-function twerklist_core_node_view($node, $view_mode, $langcode) {
+function papio_core_node_view($node, $view_mode) {
 
   switch ($view_mode) {
     case 'teaser':
-    case 'node_related':
-
-      // Link the image to related content.
-      // @todo There should be a better way?!
-      if (!empty($node->content['field_video_single'][0]['file'])) {
-        $the_image = $node->content['field_video_single'][0]['file'];
-
-        $element = array(
-          '#theme' => 'link',
-          '#path' => 'node/' . $node->nid,
-          '#text' => drupal_render($the_image),
-          '#options' => array(
-            'attributes' => array(),
-            'html' => TRUE,
-          ),
-        );
-
-        $node->content['field_video_single'][0]['file'] = $element;
+      if (!empty($node->content['field_new'][0]['#markup'])) {
+        $node->content['field_new'][0]['#markup'] = 'New!';
       }
-
-      break;
-
-    default:
+      else {
+        unset($node->content['field_new']);
+      }
       break;
   }
-}
-
-/**
- * Implement hook_css_alter
- */
-function twerklist_core_css_alter(&$css) {
-  // Get rid of thumbs-up-down.css file.
-  unset($css[drupal_get_path('module', 'rate') . '/templates/thumbs-up-down/thumbs-up-down.css']);
 }
 
 function twerklist_core_preprocess_html(&$vars) {
@@ -68,60 +181,20 @@ function twerklist_core_preprocess_html(&$vars) {
     '#tag' => 'meta', // The #tag is the html tag - <link />
     '#attributes' => array(
       'name' => 'msvalidate.01',
-      'content' => 'CD556FD9720B0D6A617B1DF54833ECF7',
+      'content' => 'put your bing_search_index code here.',
     ),
   );
 
   drupal_add_html_head($bing_tag, 'bing_search_index');
 }
 
-/**
- * Implements hook_field_extra_fields().
- */
-function twerklist_core_field_extra_fields() {
-  
-    $extra['node']['article'] = array(
-      'display' => array(
-        'article_bottom_info' => array(
-          'label' => t('Bottom Info'),
-          'description' => t('Article Bottom Info'),
-          'weight' => 0,
-        ),
-      ),
-    );
+function papio_core_preprocess_page(&$variables) {
 
-  return $extra;
-}
-
-/**
- * Implements hook_entity_view().
- */
-function twerklist_core_entity_view($entity, $type, $view_mode, $langcode) {
-  $node_types = array('article');
-
-  if (in_array($entity->type, $node_types) && $view_mode == 'full') {
-    $entity->content['article_bottom_info'] = array(
-      '#markup' => _twerklist_core_get_bottom_info($entity),
-      '#prefix' => '<div class="article_bottominfo_extra">',
-      '#suffix' => '</div>',
-    );
+  // Add header variables for usage in page.tpl.php file.
+  if ($header_line_1 = variable_get('header_line_1')) {
+    $variables['header_line_1'] = $header_line_1;
   }
-}
-
-
-/**
- * @todo Double call, fix it.
- */
-function _twerklist_core_get_bottom_info($entity) {  
-  $fields = array('body', 'field_music_in_video');
-  $content = array();
-  
-  foreach ($fields as $field_name) {
-    $field_data = field_get_items('node', $entity, $field_name);
-    if (is_array($field_data)) {
-      $content[] = field_view_field('node', $entity, $field_name, 'full');
-    }
+  if ($header_line_2 = variable_get('header_line_2')) {
+    $variables['header_line_2'] = $header_line_2;
   }
-  
-  return render($content);
 }

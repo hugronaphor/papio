@@ -41,7 +41,7 @@ function media_vine_theme($existing, $type, $theme, $path) {
     'media_vine_video' => array(
       'variables' => array('uri' => NULL, 'options' => array()),
       'file' => 'media_vine.theme.inc',
-      'path' => $path . '/themes',
+      'path' => $path . '/theme',
       'template' => 'media-vine-video',
     ),
   );

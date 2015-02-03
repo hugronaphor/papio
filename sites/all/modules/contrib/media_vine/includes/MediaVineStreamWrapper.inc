@@ -38,7 +38,7 @@ class MediaVineStreamWrapper extends MediaReadOnlyStreamWrapper {
    */
   public function getOriginalThumbnailPath() {
     $parts = $this->get_parameters();
-    $oembed_url = url('https://api.vineapp.com/timelines/posts/s/' . check_plain($parts['v']));
+    $oembed_url = url('https://api.vineapp.com/timelines/posts/s/' . $parts['v']);
     $response = drupal_http_request($oembed_url);
 
     if (!isset($response->error)) {
@@ -69,7 +69,7 @@ class MediaVineStreamWrapper extends MediaReadOnlyStreamWrapper {
         file_unmanaged_save_data($response->data, $local_path, TRUE);
       }
       else {
-        @copy($this->getOriginalThumbnailPath(), $local_path);
+        copy($this->getOriginalThumbnailPath(), $local_path);
       }
     }
 
