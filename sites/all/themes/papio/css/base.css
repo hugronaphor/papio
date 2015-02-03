@@ -1227,31 +1227,29 @@ header.page-header {
   text-align: center;
 }
 header.page-header #logo {
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
   display: block;
 }
-header.page-header #logo a {
-  max-width: 100%;
+header.page-header #logo img {
+  width: 100%;
+  max-width: 280px;
 }
 header.page-header .header-line {
-  background: #f0f0f0;
-  margin: 0 auto;
+  margin: 10px auto;
   position: relative;
   color: #000;
-  display: inline-block;
-}
-header.page-header .header-line:after {
-  content: ".";
   display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-  display: table;
-  line-height: 0;
-  content: "";
 }
 header.page-header .header-line p {
   text-align: center;
+  background: #f0f0f0;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 17px;
+}
+header.page-header .header-line-two {
+  margin-bottom: 20px;
 }
 header.page-header .block-papio-core {
   text-align: center;

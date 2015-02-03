@@ -72,33 +72,32 @@ header {
     text-align: center;
 
     #logo {
-      margin: 20px 0 0 0;
+      margin: 20px 0 20px 0;
       //max-width: 280px;
       display: block;
-      a {
-        max-width: 100%;
+      img {
+        width: 100%;
+        max-width: 280px;
       }
     }
 
-    .header-line {
-      background: $bodyColor;
-      margin: 0 auto;
+    .header-line {      
+      margin: 10px auto;
       position: relative;
       color: #000;
-      display: inline-block;
-      &:after{
-        content: ".";
-display: block;
-height: 0;
-clear: both;
-visibility: hidden;
-display: table;
-line-height: 0;
-content: "";
-      }
-      p{
+      display: block;
+      p {
         text-align: center;
+        background: $bodyColor;
+        margin: 0 auto;
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 17px;
       }
+    }
+    
+    .header-line-two {
+      margin-bottom: 20px;
     }
 
     .block-papio-core {
