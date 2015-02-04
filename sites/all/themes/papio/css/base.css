@@ -1218,7 +1218,7 @@ a:active {
 header.page-header {
   background-image: url("../images/papio_header_img.jpg");
   background-repeat: no-repeat;
-  background-color: #32b38c;
+  background-color: #f0f0f0;
   background-position: center;
   margin: 0;
   border-bottom: 3px solid #333;
@@ -1228,7 +1228,7 @@ header.page-header {
 }
 header.page-header #logo {
   margin: 20px 0 20px 0;
-  display: block;
+  display: inline-block;
 }
 header.page-header #logo img {
   width: 100%;
@@ -1258,7 +1258,7 @@ header.page-header .block-papio-core {
 header.page-header .block-papio-core .global-bows-count {
   right: 20px;
   position: absolute;
-  top: 10px;
+  top: 0;
 }
 header.page-header .block-papio-core .global-bows-count label.global-bows-count-title {
   margin-bottom: 3px;
@@ -1338,8 +1338,6 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   padding: 0;
   list-style-type: none;
   list-style-image: none;
-  margin-top: 10px;
-  height: 35px;
 }
 .social-buttons ul li {
   display: inline;
