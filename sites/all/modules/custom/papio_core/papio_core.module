@@ -198,3 +198,5 @@ function papio_core_preprocess_page(&$variables) {
     $variables['header_line_2'] = $header_line_2;
   }
 }
+
+//function papio_core_form_alter(&$form, &$form_state, $form_id);

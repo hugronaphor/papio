@@ -1,7 +1,7 @@
 <div class="social header-social-buttons">
   <?php if ($footer_facebook_site_url || $footer_twitter_site_url || $footer_youtube_site_url) : ?>
     <div class="social-buttons">
-      <ul class="footer-social">
+      <ul class="header-social">
         <?php if ($footer_facebook_site_url) : ?>
           <li rel="fb"><a href="<?php print $footer_facebook_site_url; ?>"></a></li>      
         <?php endif; ?>

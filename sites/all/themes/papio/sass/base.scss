@@ -94,7 +94,7 @@ header {
         font-size: 17px;
       }
     }
-    
+
     .header-line-two {
       margin-bottom: 20px;
     }
@@ -106,18 +106,41 @@ header {
         right: 20px;
         position: absolute;
         top: 0;
+        font-size: 21px;
         label.global-bows-count-title {
           margin-bottom: 3px;
           display: block;
+          font-size: 22px;
         }
         .global-bows-count-itself {
           span {
-            padding: 2px;
+            padding: 2px 3px;
             background: $bodyColor;
             margin: 0;
             color: $specialGreenColor;
           }
         }
+      }
+    }
+  }
+}
+
+.views-exposed-widget {
+  text-align:center;
+
+  &.views-widget-filter-field_sex_tid {
+    .form-type-bef-link {
+      display: inline-block;
+      width: 25%;
+    }
+  }
+
+  &.views-widget-filter-field_color_type_tid {
+    text-align:center;
+    .bef-select-as-links {
+      margin: 0 auto;
+      .form-type-bef-link {
+        display: inline-block;
       }
     }
   }
@@ -218,8 +241,8 @@ header {
       /*padding: 5px 20px 5px 20px;*/
       color: #85848a;
       background: none;
-      width: 35px;
-      height: 35px;
+      width: 52px;
+      height: 52px;
       display: inline-block;
       /*float: left;*/
 
@@ -232,24 +255,24 @@ header {
 
 
     &[rel="fb"] a {
-      background: url("../images/social/social_icons.png") -35px -35px;
+      background: url("../images/social/social_icons.png") 0 0;
     }
     &[rel="fb"] a:hover {
-      background: url("../images/social/social_icons.png") -35px -70px;
+      background: url("../images/social/social_icons.png") 0 52px;
     }
 
     &[rel="twitter"] a {
-      background: url("../images/social/social_icons.png") -105px -35px;
+      background: url("../images/social/social_icons.png") -208px 0;
     }
     &[rel="twitter"] a:hover {
-      background: url("../images/social/social_icons.png") -105px -70px;
+      background: url("../images/social/social_icons.png") -208px 52px;
     }
 
     &[rel="yt"] a {
-      background: url("../images/social/social_icons.png") -140px -35px;
+      background: url("../images/social/social_icons.png") 52px 0px;
     }
     &[rel="yt"] a:hover {
-      background: url("../images/social/social_icons.png") -140px -70px;
+      background: url("../images/social/social_icons.png") 52px 52px;
     }
   }
 }

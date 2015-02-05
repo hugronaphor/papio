@@ -1259,16 +1259,35 @@ header.page-header .block-papio-core .global-bows-count {
   right: 20px;
   position: absolute;
   top: 0;
+  font-size: 21px;
 }
 header.page-header .block-papio-core .global-bows-count label.global-bows-count-title {
   margin-bottom: 3px;
   display: block;
+  font-size: 22px;
 }
 header.page-header .block-papio-core .global-bows-count .global-bows-count-itself span {
-  padding: 2px;
+  padding: 2px 3px;
   background: #f0f0f0;
   margin: 0;
   color: #0c8f7f;
+}
+
+.views-exposed-widget {
+  text-align: center;
+}
+.views-exposed-widget.views-widget-filter-field_sex_tid .form-type-bef-link {
+  display: inline-block;
+  width: 25%;
+}
+.views-exposed-widget.views-widget-filter-field_color_type_tid {
+  text-align: center;
+}
+.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links {
+  margin: 0 auto;
+}
+.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link {
+  display: inline-block;
 }
 
 .view-main-list .view-content .views-row {
@@ -1348,8 +1367,8 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   /*padding: 5px 20px 5px 20px;*/
   color: #85848a;
   background: none;
-  width: 35px;
-  height: 35px;
+  width: 52px;
+  height: 52px;
   display: inline-block;
   /*float: left;*/
   -webkit-transition: background 0.2s ease-out;
@@ -1359,22 +1378,22 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   cursor: pointer;
 }
 .social-buttons ul li[rel="fb"] a {
-  background: url("../images/social/social_icons.png") -35px -35px;
+  background: url("../images/social/social_icons.png") 0 0;
 }
 .social-buttons ul li[rel="fb"] a:hover {
-  background: url("../images/social/social_icons.png") -35px -70px;
+  background: url("../images/social/social_icons.png") 0 52px;
 }
 .social-buttons ul li[rel="twitter"] a {
-  background: url("../images/social/social_icons.png") -105px -35px;
+  background: url("../images/social/social_icons.png") -208px 0;
 }
 .social-buttons ul li[rel="twitter"] a:hover {
-  background: url("../images/social/social_icons.png") -105px -70px;
+  background: url("../images/social/social_icons.png") -208px 52px;
 }
 .social-buttons ul li[rel="yt"] a {
-  background: url("../images/social/social_icons.png") -140px -35px;
+  background: url("../images/social/social_icons.png") 52px 0px;
 }
 .social-buttons ul li[rel="yt"] a:hover {
-  background: url("../images/social/social_icons.png") -140px -70px;
+  background: url("../images/social/social_icons.png") 52px 52px;
 }
 
 .footer {
