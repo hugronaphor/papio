@@ -27,6 +27,7 @@
 
 $bodyColor : #f0f0f0;
 $specialGreenColor : #0c8f7f;
+$specialCarrotColor : #f26522;
 
 .hidden {
   display: none;
@@ -127,20 +128,69 @@ header {
 
 .views-exposed-widget {
   text-align:center;
+  margin-top:20px;
 
   &.views-widget-filter-field_sex_tid {
-    .form-type-bef-link {
-      display: inline-block;
-      width: 25%;
+
+    .bef-select-as-links {
+
+      .form-type-bef-link {
+        display: inline-block;
+        margin: 3px 10px;
+
+        a {
+          position:relative;
+          display:block;
+          .category-image {
+
+            img{
+              width: 100%;
+              max-width: 200px;
+            }
+          }
+          .category-title {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            background: rgba(51, 51, 51, 0.5);
+            span {
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+
+
+      }
     }
   }
 
   &.views-widget-filter-field_color_type_tid {
     text-align:center;
+    float: none;
+    clear:both;
+    overflow:hidden;
+
     .bef-select-as-links {
-      margin: 0 auto;
+
       .form-type-bef-link {
         display: inline-block;
+        margin: 3px 10px;
+        a {
+          text-decoration: none;
+          &:hover {
+            color: $specialCarrotColor;
+          }
+        }
       }
     }
   }
@@ -148,7 +198,10 @@ header {
 
 .view-main-list {
   .view-content {
+    text-align:center;
+    width:100%;
     .views-row {
+      display:inline-block;
       .group-main-initial {
         .field-name-field-new {
           position: absolute;        
@@ -156,7 +209,7 @@ header {
           top: 3%;
           //bottom:10%;
           float: left;
-          background: #f26522;
+          background: $specialCarrotColor;
           //background: rgba(50, 179, 140, 0.6);
           padding: 8px 8px;
           z-index: 99;
@@ -175,26 +228,42 @@ header {
             bottom:0;
           }
         }
-      }
-
-      width: 24%;
-      box-sizing: border-box;
-      //float:left;
-      display: inline-block;
-      margin-bottom: 20px;
-      position: relative;
-
-      .field-item {
-        .content {
-          a {
-            display: block;
+        .field-name-field-image {
+          //display: inline-block;
+          .field-item {
             img {
-              height: auto;
               width: 100%;
+              max-width: 250px;
             }
           }
         }
+      } 
+
+      .group-overlay-data {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        color: white;        
+        background: rgba(51, 51, 51, 0.5);
+        .field-name-field-sku {
+          //font-size: 30px;
+          &:after {
+            content: '-------- pret';
+            color: $specialCarrotColor;
+            //replase as backfround or image
+          }
+        }
+        .field-name-field-price {
+          
+        }
       }
+
+
     }
   }
 }

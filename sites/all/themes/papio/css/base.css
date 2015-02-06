@@ -1275,27 +1275,62 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 
 .views-exposed-widget {
   text-align: center;
+  margin-top: 20px;
 }
-.views-exposed-widget.views-widget-filter-field_sex_tid .form-type-bef-link {
+.views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link {
   display: inline-block;
-  width: 25%;
+  margin: 3px 10px;
+}
+.views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link a {
+  position: relative;
+  display: block;
+}
+.views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link a .category-image img {
+  width: 100%;
+  max-width: 200px;
+}
+.views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link a .category-title {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  background: rgba(51, 51, 51, 0.5);
+}
+.views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link a .category-title span {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .views-exposed-widget.views-widget-filter-field_color_type_tid {
   text-align: center;
-}
-.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links {
-  margin: 0 auto;
+  float: none;
+  clear: both;
+  overflow: hidden;
 }
 .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link {
   display: inline-block;
+  margin: 3px 10px;
+}
+.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link a {
+  text-decoration: none;
+}
+.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link a:hover {
+  color: #f26522;
 }
 
+.view-main-list .view-content {
+  text-align: center;
+  width: 100%;
+}
 .view-main-list .view-content .views-row {
-  width: 24%;
-  box-sizing: border-box;
   display: inline-block;
-  margin-bottom: 20px;
-  position: relative;
 }
 .view-main-list .view-content .views-row .group-main-initial .field-name-field-new {
   position: absolute;
@@ -1320,12 +1355,25 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 .view-main-list .view-content .views-row .group-main-initial .field-name-field-new.on-bottom {
   bottom: 0;
 }
-.view-main-list .view-content .views-row .field-item .content a {
-  display: block;
-}
-.view-main-list .view-content .views-row .field-item .content a img {
-  height: auto;
+.view-main-list .view-content .views-row .group-main-initial .field-name-field-image .field-item img {
   width: 100%;
+  max-width: 250px;
+}
+.view-main-list .view-content .views-row .group-overlay-data {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: white;
+  background: rgba(51, 51, 51, 0.5);
+}
+.view-main-list .view-content .views-row .group-overlay-data .field-name-field-sku:after {
+  content: '-------- pret';
+  color: #f26522;
 }
 
 .pager {

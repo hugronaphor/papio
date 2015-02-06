@@ -30,7 +30,7 @@ function papio_select_as_links($vars) {
 
   $output = '';
   $name = $element['#name'];
-  
+
   // Collect selected values so we can properly style the links later.
   $selected_options = array();
   if (empty($element['#value'])) {
@@ -79,11 +79,11 @@ function papio_select_as_links($vars) {
   // To do: Add apropriate check to the specific view.
   if (1) {
     $vid = taxonomy_vocabulary_machine_name_load('sex')->vid;
-    $tree = taxonomy_get_tree($vid);    
+    $tree = taxonomy_get_tree($vid);
     foreach ($tree as $tree_term) {
       $terms[$tree_term->tid] = $tree_term;
     }
-    
+
     $terms = taxonomy_term_load_multiple(array_keys($element['#options']));
     $load_term = taxonomy_get_term_by_name('All');
     if (count($load_term)) {
@@ -144,13 +144,20 @@ function papio_select_as_links($vars) {
 
         $category_title = $value;
         $value = '<div class="category-image">';
-        $value .= theme('image_style', array(
+        $the_image = theme('image_style', array(
           'style_name' => 'main_category_1',
           'path' => $file_image_uri,
+           // dosen't help to remove height.
+          'attributes' => array('width' => '', 'height' => ''),
         ));
+
+        // Temporary workaround.
+        $the_image = preg_replace('/([height|width]+=\"[0-9]+\")/i', '', $the_image);
+
+        $value .= $the_image;
         $value .= '</div>';
         $value .= '<div class="hidden category-title">';
-        $value .= $category_title;
+        $value .= '<span>' . $category_title . '</span>';
         $value .= '</div>';
       }
 
