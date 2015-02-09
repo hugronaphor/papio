@@ -32,6 +32,11 @@
       }
       );
 
+
+      $('.view-main-list .view-content .views-row').wookmark();
+
+
+
     }
   };
 

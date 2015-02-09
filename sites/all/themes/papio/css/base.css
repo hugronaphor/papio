@@ -1273,13 +1273,18 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   color: #0c8f7f;
 }
 
+.views-exposed-form .views-exposed-widget {
+  float: none;
+  padding: 0;
+}
+
 .views-exposed-widget {
   text-align: center;
   margin-top: 20px;
 }
 .views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link {
   display: inline-block;
-  margin: 3px 10px;
+  margin: 3px 3px;
 }
 .views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link a {
   position: relative;
@@ -1287,7 +1292,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 }
 .views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link a .category-image img {
   width: 100%;
-  max-width: 200px;
+  max-width: 219px;
 }
 .views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link a .category-title {
   width: 100%;
@@ -1331,6 +1336,12 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 }
 .view-main-list .view-content .views-row {
   display: inline-block;
+  /* For IE 7 */
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
 }
 .view-main-list .view-content .views-row article {
   position: relative;
@@ -1357,10 +1368,6 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 }
 .view-main-list .view-content .views-row article .group-main-initial .field-name-field-new.on-bottom {
   bottom: 0;
-}
-.view-main-list .view-content .views-row article .group-main-initial .field-name-field-image .field-item img {
-  width: 100%;
-  max-width: 250px;
 }
 .view-main-list .view-content .views-row article .group-overlay-data {
   width: 100%;
@@ -1474,6 +1481,10 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   header.page-header .block-papio-core .global-bows-count {
     position: relative;
     right: 0;
+  }
+
+  .pager {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
