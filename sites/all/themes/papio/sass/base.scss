@@ -204,7 +204,7 @@ header {
 
 .view-main-list {
   .view-content {
-    text-align:center;
+    margin: 0 auto;
     width:100%;
     .views-row {
       display:inline-block;
@@ -212,13 +212,14 @@ header {
       zoom: 1;
       *display: inline;
       vertical-align: top;
-      margin:0;
       padding:0;
-      
+      margin-bottom: 5px;
+
       article {
         position: relative;
 
         .group-main-initial {
+          overflow:hidden;
           .field-name-field-new {
             position: absolute;        
             right: 0;
@@ -247,13 +248,14 @@ header {
           .field-name-field-image {
             //display: inline-block;
             .field-item {
+              text-align:center;
               img {
-                //width: 100%;
-                //max-width: 250px;
+                width: 100%;
+                max-width: 210px;
               }
             }
           }
-        } 
+        }
 
         .group-overlay-data {
           width: 100%;
@@ -266,16 +268,24 @@ header {
           margin: auto;
           color: white;        
           background: rgba(51, 51, 51, 0.5);
+
           .field-name-field-sku {
+            padding:5px;
+            position:relative;
             //font-size: 30px;
             &:after {
-              content: '-------- pret';
+              content: '';
               color: $specialCarrotColor;
-              //replase as backfround or image
+              content: '';
+              position: absolute;
+              border-top: 2px solid $specialCarrotColor;
+              /*top: 45%;*/
+              width: 30%;
+              //replase as background or image.
             }
           }
           .field-name-field-price {
-
+            padding:5px;
           }
         }
 

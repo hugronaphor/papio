@@ -1331,7 +1331,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 }
 
 .view-main-list .view-content {
-  text-align: center;
+  margin: 0 auto;
   width: 100%;
 }
 .view-main-list .view-content .views-row {
@@ -1340,11 +1340,14 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   zoom: 1;
   *display: inline;
   vertical-align: top;
-  margin: 0;
   padding: 0;
+  margin-bottom: 5px;
 }
 .view-main-list .view-content .views-row article {
   position: relative;
+}
+.view-main-list .view-content .views-row article .group-main-initial {
+  overflow: hidden;
 }
 .view-main-list .view-content .views-row article .group-main-initial .field-name-field-new {
   position: absolute;
@@ -1369,6 +1372,13 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 .view-main-list .view-content .views-row article .group-main-initial .field-name-field-new.on-bottom {
   bottom: 0;
 }
+.view-main-list .view-content .views-row article .group-main-initial .field-name-field-image .field-item {
+  text-align: center;
+}
+.view-main-list .view-content .views-row article .group-main-initial .field-name-field-image .field-item img {
+  width: 100%;
+  max-width: 210px;
+}
 .view-main-list .view-content .views-row article .group-overlay-data {
   width: 100%;
   height: 100%;
@@ -1381,9 +1391,21 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   color: white;
   background: rgba(51, 51, 51, 0.5);
 }
+.view-main-list .view-content .views-row article .group-overlay-data .field-name-field-sku {
+  padding: 5px;
+  position: relative;
+}
 .view-main-list .view-content .views-row article .group-overlay-data .field-name-field-sku:after {
-  content: '-------- pret';
+  content: '';
   color: #f26522;
+  content: '';
+  position: absolute;
+  border-top: 2px solid #f26522;
+  /*top: 45%;*/
+  width: 30%;
+}
+.view-main-list .view-content .views-row article .group-overlay-data .field-name-field-price {
+  padding: 5px;
 }
 
 .pager {

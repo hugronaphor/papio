@@ -172,25 +172,20 @@ function papio_core_node_view($node, $view_mode) {
         // Avoid empty field.
         unset($node->content['field_new']);
       }
-      
-      
-      //dsm($node);
-      
-      //if (in_array($node->nid, array(353, 380))) {
-        
-        
-        $rand = rand(1, 2000);
-        
-        if ($rand % 2 == 0) {
-          $node->content['field_image'][0]['#image_style'] = 'main_list_2';
-        }
-        elseif ($rand % 3 == 0) {
-          $node->content['field_image'][0]['#image_style'] = 'main_list_3';
-        }
-        
-        //dsm(round(fibonacci($node->nid)));
+
+
+      $rand = rand(1, 2000);
+
+      if ($rand % 2 == 0) {
+        $node->content['field_image'][0]['#image_style'] = 'main_list_2';
+      }
+      elseif ($rand % 3 == 0) {
+        $node->content['field_image'][0]['#image_style'] = 'main_list_3';
+      }
+
+      //dsm(round(fibonacci($node->nid)));
       //}
-      
+
       break;
   }
 }
@@ -199,43 +194,41 @@ function fibonacci($n) {
 
 //0, 1, 1, 2, 3, 5, 8, 13, 21
 
-/*this is an error condition
-   returning -1 is arbitrary - we could
-   return anything we want for this
-   error condition:
-*/
-if($n <0)
-return -1;
+  /* this is an error condition
+    returning -1 is arbitrary - we could
+    return anything we want for this
+    error condition:
+   */
+  if ($n < 0)
+    return -1;
 
-if ($n == 0)
-return 0;
+  if ($n == 0)
+    return 0;
 
-if($n == 1 || $n == 2)
-return 1;
+  if ($n == 1 || $n == 2)
+    return 1;
 
-$int1 = 1;
-$int2 = 1;
+  $int1 = 1;
+  $int2 = 1;
 
-$fib = 0;
+  $fib = 0;
 
 //start from n==3
-for($i=1; $i<=$n-2; $i++ )
-{
-$fib = $int1 + $int2;
+  for ($i = 1; $i <= $n - 2; $i++) {
+    $fib = $int1 + $int2;
 //swap the values out:
-$int2 = $int1;
-$int1 = $fib;
-}
+    $int2 = $int1;
+    $int1 = $fib;
+  }
 
-return $fib;
-
+  return $fib;
 }
 
 function papio_core_preprocess_html(&$vars) {
 
   drupal_add_js(drupal_get_path('theme', 'papio') . '/js/jquery.wookmark.js');
-  
-  
+
+
   $bing_tag = array(
     '#tag' => 'meta', // The #tag is the html tag - <link />
     '#attributes' => array(
@@ -262,12 +255,8 @@ function papio_core_preprocess_page(&$variables) {
 
 function papio_core_preprocess_views_view(&$vars) {
   $view = &$vars['view'];
-  if($view->name == 'main_list' && $view->current_display == 'main_list') {
-    
-      //dsm($view);
+  if ($view->name == 'main_list' && $view->current_display == 'main_list') {
+
+    //dsm($view);
   }
-  
-  
-
-
 }
