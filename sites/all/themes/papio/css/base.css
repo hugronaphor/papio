@@ -1211,7 +1211,8 @@ a:active {
 
 /* selected link */
 .main-wrapper {
-  width: 70%;
+  width: 70% px;
+  max-width: 972px;
   margin: auto;
 }
 
@@ -1284,7 +1285,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 }
 .views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link {
   display: inline-block;
-  margin: 3px 3px;
+  margin: 3px 6px;
 }
 .views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link a {
   position: relative;
@@ -1333,6 +1334,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 .view-main-list .view-content {
   margin: 0 auto;
   width: 100%;
+  right: -5px;
 }
 .view-main-list .view-content .views-row {
   display: inline-block;
@@ -1377,7 +1379,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 }
 .view-main-list .view-content .views-row article .group-main-initial .field-name-field-image .field-item img {
   width: 100%;
-  max-width: 210px;
+  max-width: 220px;
 }
 .view-main-list .view-content .views-row article .group-overlay-data {
   width: 100%;

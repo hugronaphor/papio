@@ -47,6 +47,7 @@ a:active {color:#0000FF;}  /* selected link */
 
 .main-wrapper {
   width: 70%;
+  max-width: 972px;
   margin: auto;
 }
 
@@ -142,7 +143,7 @@ header {
 
       .form-type-bef-link {
         display: inline-block;
-        margin: 3px 3px;
+        margin: 3px 6px;
 
         a {
           position:relative;
@@ -206,6 +207,7 @@ header {
   .view-content {
     margin: 0 auto;
     width:100%;
+    right: -5px; // Fix the last row image widht difference.
     .views-row {
       display:inline-block;
       /* For IE 7 */
@@ -251,7 +253,7 @@ header {
               text-align:center;
               img {
                 width: 100%;
-                max-width: 210px;
+                max-width: 220px;
               }
             }
           }
