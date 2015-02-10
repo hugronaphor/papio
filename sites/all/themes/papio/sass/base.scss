@@ -149,7 +149,7 @@ header {
           position:relative;
           display:block;
           .category-image {
-
+            font-size:0;
             img{
               width: 100%;
               max-width: 219px;
@@ -168,10 +168,9 @@ header {
             font-size: 30px;
             font-weight: bold;
             background: rgba(51, 51, 51, 0.5);
+
             span {
-              position: relative;
-              top: 50%;
-              transform: translateY(-50%);
+              line-height: 108px;
             }
           }
         }
@@ -248,7 +247,7 @@ header {
             }
           }
           .field-name-field-image {
-            //display: inline-block;
+            font-size:0;
             .field-item {
               text-align:center;
               img {
@@ -270,28 +269,32 @@ header {
           margin: auto;
           color: white;        
           background: rgba(51, 51, 51, 0.5);
-
-          .field-name-field-sku {
-            padding:5px;
-            position:relative;
-            //font-size: 30px;
-            &:after {
-              content: '';
-              color: $specialCarrotColor;
-              content: '';
-              position: absolute;
-              border-top: 2px solid $specialCarrotColor;
-              /*top: 45%;*/
-              width: 30%;
-              //replase as background or image.
+          .field-group-format-wrapper {
+            width: 100%;
+            position:absolute;
+            bottom:5px;
+            .field-name-field-sku {
+              padding: 5px 0 5px 15px;
+              position:relative;
+              width:100%;
+              //font-size: 30px;
+              &:after {
+                background: url("../images/price_bg.png") no-repeat;
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 20px;
+                margin: 0px 0 0px 0;
+                margin-left: -5px;
+              }
+            }
+            .field-name-field-price {
+              padding: 5px 0 5px 15px;
+              font-size: 20px;
+              margin-top: 7px;
             }
           }
-          .field-name-field-price {
-            padding:5px;
-          }
         }
-
-
       }
     }
   }
