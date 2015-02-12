@@ -26,7 +26,7 @@
   <?php endif; ?>
 
   <?php if ($footer_credits) : ?>
-    <div class="footer-credits"><p><?php print $footer_credits; ?></p></div>
+    <div class="footer-credits"><p><?php print str_replace('[:current_year]', date('Y'), $footer_credits); ?></p></div>
   <?php endif; ?>
 
 </div>

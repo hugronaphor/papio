@@ -73,7 +73,7 @@ function papio_core_admin_form() {
   );
 
   $form['footer']['footer_credits'] = array(
-    '#type' => 'textfield',
+    '#type' => 'textarea',
     '#title' => t('Footer credits'),
     '#default_value' => variable_get('footer_credits'),
   );
