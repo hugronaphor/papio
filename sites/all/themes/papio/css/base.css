@@ -1216,6 +1216,10 @@ a:active {
   margin: auto;
 }
 
+.green-dark-color {
+  color: #2ebdaa;
+}
+
 header.page-header {
   background-image: url("../images/papio_header_img.jpg");
   background-repeat: no-repeat;
@@ -1348,6 +1352,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 }
 .view-main-list .view-content .views-row article {
   position: relative;
+  cursor: default;
 }
 .view-main-list .view-content .views-row article .group-main-initial {
   overflow: hidden;
@@ -1395,6 +1400,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   bottom: 0;
   margin: auto;
   color: white;
+  overflow: hidden;
   background: rgba(51, 51, 51, 0.5);
 }
 .view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper {
@@ -1470,6 +1476,9 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   -o-transition: background 0.2s ease-out;
   transition: background 0.2s ease-out;
   cursor: pointer;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
 }
 .social-buttons ul li[rel="fb"] a {
   background: url("../images/social/social_icons.png") 0 0;
@@ -1502,11 +1511,20 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   color: #2ebdaa;
   font-size: 25px;
 }
-.footer .block .footer-credits {
+.footer .block .footer-credits small {
+  font-size: 13px;
+  padding: 0 0 2px 0;
+  display: block;
+}
+.footer .block .footer-credits small:first-child {
   font-size: 13px;
 }
-.footer .block .footer-credits p {
-  padding: 0 0 2px 0;
+.footer .block .footer-credits a {
+  text-decoration: none;
+  color: #2ebdaa;
+}
+.footer .block .footer-credits a:hover {
+  color: #f26522;
 }
 .footer .block p {
   margin: 0;
