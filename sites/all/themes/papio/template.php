@@ -76,7 +76,7 @@ function papio_select_as_links($vars) {
     $element['#value'] = check_plain($element['#value']);
   }
 
-  // To do: Add apropriate check to the specific view.
+  // @todo: Add apropriate check to the specific view.
   if (1) {
     $vid = taxonomy_vocabulary_machine_name_load('sex')->vid;
     $tree = taxonomy_get_tree($vid);
