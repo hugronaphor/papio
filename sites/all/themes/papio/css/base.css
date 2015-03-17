@@ -1337,18 +1337,19 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 }
 
 .view-main-list .view-content {
+  text-align: center;
   margin: 0 auto;
   width: 100%;
-  right: -5px;
 }
 .view-main-list .view-content .views-row {
+  text-align: left;
   display: inline-block;
   /* For IE 7 */
   zoom: 1;
   *display: inline;
   vertical-align: top;
   padding: 0;
-  margin-bottom: 5px;
+  margin: 3px;
 }
 .view-main-list .view-content .views-row article {
   position: relative;
@@ -1430,23 +1431,25 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 
 .pager {
   text-align: left;
+  margin-left: 31px;
+  margin-top: 45px;
 }
 .pager li {
+  padding: 0;
+}
+.pager li a, .pager li.pager-current {
   text-decoration: none;
   background-color: #fff;
-  padding: 7px 15px;
+  color: #a3a3a3;
+  display: inline-block;
+  padding: 6px 23px;
+}
+.pager li a:hover, .pager li a:focus, .pager li.pager-current:hover, .pager li.pager-current:focus {
+  color: #f16625;
 }
 .pager li.pager-current {
   color: #f16625;
   cursor: default;
-}
-.pager li a, .pager li span {
-  color: #a3a3a3;
-  text-decoration: none;
-  display: inline-block;
-}
-.pager li a:hover, .pager li a:focus, .pager li span:hover, .pager li span:focus {
-  color: #f16625;
 }
 .pager li.pager-last, .pager li.pager-first {
   display: none;
@@ -1539,8 +1542,14 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 
   .pager {
     text-align: center;
+    margin-left: 31px;
   }
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   /* portrait phones */
+}
+@media (max-width: 972px) {
+  .pager {
+    margin-left: 0;
+  }
 }

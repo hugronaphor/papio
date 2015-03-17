@@ -209,17 +209,20 @@ header {
 
 .view-main-list {
   .view-content {
+    text-align: center;
     margin: 0 auto;
     width:100%;
-    right: -5px; // Fix the last row image widht difference.
+    // right: -5px; // Fix the last row image widht difference.
     .views-row {
+      text-align: left;
       display:inline-block;
       /* For IE 7 */
       zoom: 1;
       *display: inline;
       vertical-align: top;
       padding:0;
-      margin-bottom: 5px;
+      //margin-bottom: 5px;
+      margin:3px;
 
       article {
         position: relative;
@@ -307,25 +310,35 @@ header {
 
 .pager {
   text-align: left;
+  margin-left: 31px;
+  margin-top:45px;
   li {
-    text-decoration: none;
-    background-color: #fff;
-    padding: 7px 15px;
 
-    &.pager-current {
-      color: #f16625;
-      cursor:default;
-    }
+    padding:0;
 
-    a, span {
-      color:#a3a3a3;
+  
+
+    
+    
+    a, &.pager-current {
       text-decoration: none;
+      background-color: #fff;
+      color:#a3a3a3;
       display: inline-block;
+      padding: 6px 23px;
 
       &:hover, &:focus {
         color: #f16625;
       } 
     }
+    
+      &.pager-current {
+      color: #f16625;
+      cursor:default;
+    }
+    
+    
+    
 
     &.pager-last, &.pager-first {
       display: none;
@@ -434,9 +447,16 @@ header {
   }
   .pager {
     text-align: center;
+    margin-left: 31px;
   }
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   /* portrait phones */
+}
+
+@media (max-width: 972px) {
+  .pager {
+    margin-left: 0;
+  }
 }
