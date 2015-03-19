@@ -47,7 +47,7 @@
 /*
  * Corrects `block` display not defined in IE 8/9.
  */
-@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Raleway:600,400,300);
 article,
 aside,
 details,
@@ -1211,8 +1211,8 @@ a:active {
 
 /* selected link */
 .main-wrapper {
-  width: 80%;
-  max-width: 972px;
+  width: 90%;
+  max-width: 1180px;
   margin: auto;
 }
 
@@ -1225,6 +1225,7 @@ header.page-header {
   background-repeat: no-repeat;
   background-color: #f0f0f0;
   background-position: center;
+  background-size: 100%;
   margin: 0;
   border-bottom: 3px solid #333;
   padding: 10px 40px;
@@ -1285,7 +1286,9 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 
 .views-exposed-widget {
   text-align: center;
-  margin-top: 20px;
+}
+.views-exposed-widget.views-widget-filter-field_sex_tid {
+  margin-top: 62px;
 }
 .views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link {
   display: inline-block;
@@ -1312,22 +1315,26 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   bottom: 0;
   margin: auto;
   color: white;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 38px;
+  font-weight: 600;
   background: rgba(51, 51, 51, 0.5);
+  text-transform: uppercase;
 }
 .views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link a .category-title span {
-  line-height: 108px;
+  line-height: 90px;
 }
 .views-exposed-widget.views-widget-filter-field_color_type_tid {
+  margin-top: 40px;
   text-align: center;
   float: none;
   clear: both;
   overflow: hidden;
+  font-size: 23px;
+  text-transform: lowercase;
 }
 .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link {
   display: inline-block;
-  margin: 3px 10px;
+  margin: 3px 30px;
 }
 .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link a {
   text-decoration: none;
@@ -1335,10 +1342,31 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link a:hover {
   color: #f26522;
 }
+.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.bef-select-as-links-selected a {
+  color: #f26522;
+}
+.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.form-item-edit-color-type-all, .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.selected-edit-color-type-all {
+  display: none;
+}
+.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.selected-edit-color-type-6, .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.form-item-edit-color-type-6 {
+  position: relative;
+}
+.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.selected-edit-color-type-6:after, .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.form-item-edit-color-type-6:after {
+  background: url("../images/papion.png") 0 54px;
+  content: '';
+  position: absolute;
+  width: 43px;
+  height: 18px;
+  margin: 0 0 0 11px;
+  top: 7px;
+}
+.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.selected-edit-color-type-6:after:hover, .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.form-item-edit-color-type-6:after:hover {
+  background: url("../images/papion.png") 43px 0;
+}
 
 .view-main-list .view-content {
   text-align: center;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   width: 100%;
 }
 .view-main-list .view-content .views-row {
@@ -1349,7 +1377,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   *display: inline;
   vertical-align: top;
   padding: 0;
-  margin: 3px;
+  margin: 4px 3px;
 }
 .view-main-list .view-content .views-row article {
   position: relative;
@@ -1360,20 +1388,17 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 }
 .view-main-list .view-content .views-row article .group-main-initial .field-name-field-new {
   position: absolute;
-  right: 0;
-  top: 3%;
+  right: 20px;
+  top: 20px;
   float: left;
   background: #f26522;
-  padding: 8px 8px;
+  padding: 4px 0;
   z-index: 99;
-}
-.view-main-list .view-content .views-row article .group-main-initial .field-name-field-new h2 {
+  width: 100px;
+  text-align: center;
   font-size: 20px;
-  margin: 0;
-}
-.view-main-list .view-content .views-row article .group-main-initial .field-name-field-new h2 a {
   color: #fff;
-  font-size: 20px;
+  font-weight: 300;
 }
 .view-main-list .view-content .views-row article .group-main-initial .field-name-field-new.on-top {
   top: 0;
@@ -1389,7 +1414,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 }
 .view-main-list .view-content .views-row article .group-main-initial .field-name-field-image .field-item img {
   width: 100%;
-  max-width: 220px;
+  max-width: 280px;
 }
 .view-main-list .view-content .views-row article .group-overlay-data {
   width: 100%;
@@ -1403,6 +1428,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   color: white;
   overflow: hidden;
   background: rgba(51, 51, 51, 0.5);
+  font-family: arial, sans-serif;
 }
 .view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper {
   width: 100%;
@@ -1413,6 +1439,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   padding: 5px 0 5px 15px;
   position: relative;
   width: 100%;
+  font-size: 20px;
 }
 .view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku:after {
   background: url("../images/price_bg.png") no-repeat;
@@ -1425,14 +1452,16 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 }
 .view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-price {
   padding: 5px 0 5px 15px;
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 7px;
 }
 
 .pager {
   text-align: left;
-  margin-left: 31px;
-  margin-top: 45px;
+  margin-left: 3px;
+  margin-top: 57px;
+  font-family: arial, sans-serif;
+  font-size: 22px;
 }
 .pager li {
   padding: 0;
@@ -1442,7 +1471,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   background-color: #fff;
   color: #a3a3a3;
   display: inline-block;
-  padding: 6px 23px;
+  padding: 11px 24px;
 }
 .pager li a:hover, .pager li a:focus, .pager li.pager-current:hover, .pager li.pager-current:focus {
   color: #f16625;
@@ -1474,14 +1503,26 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   height: 52px;
   display: inline-block;
   /*float: left;*/
-  -webkit-transition: background 0.2s ease-out;
-  -moz-transition: background 0.2s ease-out;
-  -o-transition: background 0.2s ease-out;
-  transition: background 0.2s ease-out;
   cursor: pointer;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
+  -webkit-transition: background 0.2s ease-out;
+  -moz-transition: background 0.2s ease-out;
+  -o-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.social-buttons ul li a:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .social-buttons ul li[rel="fb"] a {
   background: url("../images/social/social_icons.png") 0 0;
@@ -1551,5 +1592,10 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 @media (max-width: 972px) {
   .pager {
     margin-left: 0;
+  }
+}
+@media (max-width: 1150px) {
+  .page-header {
+    background-size: cover !important;
   }
 }

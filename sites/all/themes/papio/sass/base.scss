@@ -15,7 +15,7 @@
 /* Component (SMACSS module) rules */
 @import "components/misc";
 
-@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Raleway:600,400,300);
 
 // Optionally, add your own components here.
 // @import "print";
@@ -38,6 +38,7 @@ $specialCarrotColor : #f26522;
 body {
   background: $bodyColor;
   font-family: 'Raleway', sans-serif;
+
 }
 a {color:#333;}      /* unvisited link */
 a:visited {color:rgba(51, 51, 51, 0.81);}  /* visited link */
@@ -48,8 +49,8 @@ a:hover {
 a:active {color:#0000FF;}  /* selected link */
 
 .main-wrapper {
-  width: 80%;
-  max-width: 972px;
+  width: 90%;
+  max-width: 1180px;
   margin: auto;
 }
 
@@ -72,6 +73,7 @@ header {
     background-repeat: no-repeat;
     background-color: $bodyColor;;
     background-position:center;
+    background-size: 100%;
     margin: 0;
     border-bottom: 3px solid #333;
     padding: 10px 40px;
@@ -140,10 +142,10 @@ header {
 
 .views-exposed-widget {
   text-align:center;
-  margin-top:20px;
+
 
   &.views-widget-filter-field_sex_tid {
-
+    margin-top:62px;
     .bef-select-as-links {
 
       .form-type-bef-link {
@@ -170,12 +172,13 @@ header {
             bottom: 0;
             margin: auto;
             color: white;
-            font-size: 30px;
-            font-weight: bold;
+            font-size: 38px;
+            font-weight: 600;
             background: rgba(51, 51, 51, 0.5);
+            text-transform: uppercase;
 
             span {
-              line-height: 108px;
+              line-height: 90px;
             }
           }
         }
@@ -186,23 +189,59 @@ header {
   }
 
   &.views-widget-filter-field_color_type_tid {
+    margin-top:40px;
     text-align:center;
     float: none;
     clear:both;
     overflow:hidden;
+    font-size:23px;
+    text-transform: lowercase;
 
     .bef-select-as-links {
 
       .form-type-bef-link {
         display: inline-block;
-        margin: 3px 10px;
+        margin: 3px 30px;
         a {
           text-decoration: none;
           &:hover {
             color: $specialCarrotColor;
           }
         }
+
+        &.bef-select-as-links-selected {
+          a {
+            color: $specialCarrotColor;
+          }
+        }
+
+        &.form-item-edit-color-type-all,
+        &.selected-edit-color-type-all {
+          display: none;
+        }
+
+        &.selected-edit-color-type-6,
+        &.form-item-edit-color-type-6 {
+          position:relative;
+          &:after {
+            background: url("../images/papion.png") 0 54px;
+            content: '';
+            position: absolute;
+            width: 43px;
+            height: 18px;
+            margin: 0 0 0 11px;
+            top:7px;
+
+            &:hover {
+              background: url("../images/papion.png") 43px 0;
+            }
+
+          }
+        }
+
       }
+
+
     }
   }
 }
@@ -210,7 +249,7 @@ header {
 .view-main-list {
   .view-content {
     text-align: center;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
     width:100%;
     // right: -5px; // Fix the last row image widht difference.
     .views-row {
@@ -221,8 +260,7 @@ header {
       *display: inline;
       vertical-align: top;
       padding:0;
-      //margin-bottom: 5px;
-      margin:3px;
+      margin: 4px 3px;
 
       article {
         position: relative;
@@ -230,23 +268,18 @@ header {
         .group-main-initial {
           overflow:hidden;
           .field-name-field-new {
-            position: absolute;        
-            right: 0;
-            top: 3%;
-            //bottom:10%;
+            position: absolute;
+            right: 20px;
+            top: 20px;
             float: left;
-            background: $specialCarrotColor;
-            //background: rgba(50, 179, 140, 0.6);
-            padding: 8px 8px;
+            background: #f26522;
+            padding: 4px 0;
             z-index: 99;
-            h2 {
-              font-size: 20px;
-              margin:0;
-              a {
-                color:#fff;
-                font-size: 20px;
-              }
-            }
+            width: 100px;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 300;
             &.on-top {
               top: 0;
             }
@@ -260,7 +293,7 @@ header {
               text-align:center;
               img {
                 width: 100%;
-                max-width: 220px;
+                max-width: 280px;
               }
             }
           }
@@ -278,6 +311,7 @@ header {
           color: white;
           overflow: hidden;
           background: rgba(51, 51, 51, 0.5);
+          font-family: arial, sans-serif;
           .field-group-format-wrapper {
             width: 100%;
             position:absolute;
@@ -286,6 +320,7 @@ header {
               padding: 5px 0 5px 15px;
               position:relative;
               width:100%;
+              font-size: 20px;
               &:after {
                 background: url("../images/price_bg.png") no-repeat;
                 content: '';
@@ -298,7 +333,7 @@ header {
             }
             .field-name-field-price {
               padding: 5px 0 5px 15px;
-              font-size: 20px;
+              font-size: 30px;
               margin-top: 7px;
             }
           }
@@ -310,35 +345,29 @@ header {
 
 .pager {
   text-align: left;
-  margin-left: 31px;
-  margin-top:45px;
+  margin-left: 3px; // compensate article margin
+  margin-top:57px;
+  font-family: arial, sans-serif;    
+  font-size: 22px;
   li {
-
     padding:0;
 
-  
-
-    
-    
     a, &.pager-current {
       text-decoration: none;
       background-color: #fff;
       color:#a3a3a3;
       display: inline-block;
-      padding: 6px 23px;
+      padding: 11px 24px;
 
       &:hover, &:focus {
         color: #f16625;
       } 
     }
-    
-      &.pager-current {
+
+    &.pager-current {
       color: #f16625;
       cursor:default;
     }
-    
-    
-    
 
     &.pager-last, &.pager-first {
       display: none;
@@ -365,14 +394,32 @@ header {
       display: inline-block;
       /*float: left;*/
 
-      -webkit-transition: background 0.2s ease-out;
-      -moz-transition: background 0.2s ease-out;
-      -o-transition: background 0.2s ease-out;
-      transition: background 0.2s ease-out;
       cursor: pointer;
       -webkit-border-radius: 25px;
       -moz-border-radius: 25px;
       border-radius: 25px;
+
+      // original
+      -webkit-transition: background 0.2s ease-out;
+      -moz-transition: background 0.2s ease-out;
+      -o-transition: background 0.2s ease-out;
+      transition: background 0.2s ease-out;
+
+      // end original
+
+      -webkit-transition: all ease 0.3s;
+      -moz-transition: all ease 0.3s;
+      -o-transition: all ease 0.3s;
+      -ms-transition: all ease 0.3s;
+      transition: all ease 0.3s;
+
+      &:hover {
+        -webkit-transform:rotate(180deg);
+        -moz-transform:rotate(180deg);
+        -o-transform:rotate(180deg);
+        -ms-transform:rotate(180deg);
+        transform:rotate(180deg);
+      }
     }
 
     &[rel="fb"] a {
@@ -460,3 +507,12 @@ header {
     margin-left: 0;
   }
 }
+
+@media (max-width: 1150px) {
+
+  .page-header {
+    background-size: cover!important;
+  }
+}
+
+
