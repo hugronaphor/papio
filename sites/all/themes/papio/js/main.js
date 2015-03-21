@@ -8,6 +8,12 @@
   Drupal.behaviors.cirlceThemeExample = {
     attach: function(context) {
       //alert('test');
+      
+      var el1 = $('.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link:eq(0)');
+      var el2 = $('.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link:eq(1)');
+      
+      el1.find('a').html('&nbsp;').attr('title', 'Toate');
+      el1.before(el2);
     }
   };
 

@@ -15,7 +15,7 @@
 /* Component (SMACSS module) rules */
 @import "components/misc";
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:600,400,300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:600,400,500,300,200,100);
 
 // Optionally, add your own components here.
 // @import "print";
@@ -27,8 +27,10 @@
 
 $bodyColor : #f0f0f0;
 $specialGreenColor : #0c8f7f;
-$specialTextGreenColor : #2ebdaa;
+$specialTextGreenColor : rgb(46, 189, 170);
 $specialCarrotColor : #f26522;
+
+$arialFont : Arial, Arial, Helvetica, sans-serif;
 
 
 .hidden {
@@ -38,6 +40,7 @@ $specialCarrotColor : #f26522;
 body {
   background: $bodyColor;
   font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 
 }
 a {color:#333;}      /* unvisited link */
@@ -49,7 +52,7 @@ a:hover {
 a:active {color:#0000FF;}  /* selected link */
 
 .main-wrapper {
-  width: 90%;
+  width: 91%;
   max-width: 1180px;
   margin: auto;
 }
@@ -75,17 +78,16 @@ header {
     background-position:center;
     background-size: 100%;
     margin: 0;
-    border-bottom: 3px solid #333;
     padding: 10px 40px;
     color: #fff;
     text-align: center;
 
     #logo {
-      margin: 20px 0 20px 0;
+        margin: 48px 0 20px 0;
       display: inline-block;
       img {
         width: 100%;
-        max-width: 280px;
+        max-width: 322px;
       }
     }
 
@@ -105,12 +107,13 @@ header {
     }
 
     .header-line-two {
-      margin-bottom: 20px;
+      margin: 15px 0 20px 0;
     }
 
     .block-papio-core {
       text-align: center;
       position: relative;
+      margin-top: 81px;
       .global-bows-count {
         right: 20px;
         position: absolute;
@@ -119,14 +122,17 @@ header {
         label.global-bows-count-title {
           margin-bottom: 3px;
           display: block;
-          font-size: 22px;
+          font-size: 28px;
+          font-weight: 500;
         }
         .global-bows-count-itself {
           span {
-            padding: 2px 3px;
+            padding: 2px 5px;
             background: $bodyColor;
             margin: 0;
             color: $specialGreenColor;
+            font-family: $arialFont;
+            font-size: 27px;
           }
         }
       }
@@ -150,7 +156,13 @@ header {
 
       .form-type-bef-link {
         display: inline-block;
-        margin: 3px 6px;
+        zoom: 1;
+        *display: inline;
+        vertical-align: top;
+        padding:0;
+        margin: 4px 5px;
+        padding:0;
+        /*margin:0;*/
 
         a {
           position:relative;
@@ -159,7 +171,7 @@ header {
             font-size:0;
             img{
               width: 100%;
-              max-width: 219px;
+              max-width: 280px;
             }
           }
           .category-title {
@@ -178,18 +190,18 @@ header {
             text-transform: uppercase;
 
             span {
-              line-height: 90px;
+              line-height: 114px;
             }
           }
         }
-
 
       }
     }
   }
 
   &.views-widget-filter-field_color_type_tid {
-    margin-top:40px;
+    margin-top:50px;
+    margin-left: -22px;
     text-align:center;
     float: none;
     clear:both;
@@ -201,7 +213,7 @@ header {
 
       .form-type-bef-link {
         display: inline-block;
-        margin: 3px 30px;
+        margin: 3px 7px;
         a {
           text-decoration: none;
           &:hover {
@@ -217,31 +229,26 @@ header {
 
         &.form-item-edit-color-type-all,
         &.selected-edit-color-type-all {
-          display: none;
-        }
-
-        &.selected-edit-color-type-6,
-        &.form-item-edit-color-type-6 {
-          position:relative;
-          &:after {
-            background: url("../images/papion.png") 0 54px;
-            content: '';
-            position: absolute;
+          a {
             width: 43px;
             height: 18px;
-            margin: 0 0 0 11px;
-            top:7px;
-
-            &:hover {
-              background: url("../images/papion.png") 43px 0;
-            }
-
+            //margin: 0 0 0 11px;
+            top: 7px;
+            display: inline-block;
+            position: relative;
           }
         }
 
+        &.form-item-edit-color-type-all a {
+          background: url("../images/papion.png") 0 54px;
+        }
+
+        &.selected-edit-color-type-all a,
+        &.form-item-edit-color-type-all:hover a {
+
+          background: url("../images/papion.png") 43px 0;
+        }
       }
-
-
     }
   }
 }
@@ -255,6 +262,7 @@ header {
     .views-row {
       text-align: left;
       display:inline-block;
+      font-size: 0;
       /* For IE 7 */
       zoom: 1;
       *display: inline;
@@ -311,7 +319,7 @@ header {
           color: white;
           overflow: hidden;
           background: rgba(51, 51, 51, 0.5);
-          font-family: arial, sans-serif;
+          font-family: $arialFont;
           .field-group-format-wrapper {
             width: 100%;
             position:absolute;
@@ -347,7 +355,7 @@ header {
   text-align: left;
   margin-left: 3px; // compensate article margin
   margin-top:57px;
-  font-family: arial, sans-serif;    
+  font-family: $arialFont;    
   font-size: 22px;
   li {
     padding:0;
@@ -430,10 +438,10 @@ header {
     }
 
     &[rel="twitter"] a {
-      background: url("../images/social/social_icons.png") -208px 0;
+      background: url("../images/social/social_icons.png") -210px 0;
     }
     &[rel="twitter"] a:hover {
-      background: url("../images/social/social_icons.png") -208px 52px;
+      background: url("../images/social/social_icons.png") -210px 52px;
     }
 
     &[rel="yt"] a {
@@ -441,6 +449,36 @@ header {
     }
     &[rel="yt"] a:hover {
       background: url("../images/social/social_icons.png") 52px 52px;
+    }
+  }
+}
+
+// Use different background for footer socialbuttons.
+section.footer {
+  .social-buttons ul {
+
+    li {
+      &[rel="fb"] a {
+        background: url("../images/social/social_icons_footer.png") 0 52px!important;
+
+      }
+      &[rel="fb"] a:hover {
+        background: url("../images/social/social_icons_footer.png") 0 0!important;
+      }
+
+      &[rel="twitter"] a {
+        background: url("../images/social/social_icons_footer.png") -208px 52px!important;
+      }
+      &[rel="twitter"] a:hover {
+        background: url("../images/social/social_icons_footer.png") -208px 0!important;
+      }
+
+      &[rel="yt"] a {
+        background: url("../images/social/social_icons_footer.png") 52px 52px!important;
+      }
+      &[rel="yt"] a:hover {
+        background: url("../images/social/social_icons_footer.png") 52px 0px!important;
+      }
     }
   }
 }
@@ -453,22 +491,42 @@ header {
   .block {
     margin-bottom: 0;
 
-    .additional-info {
-      color: $specialTextGreenColor;
-      font-size: 25px;
+    p {
+      margin: 0;
+    }
+
+    .footer-order {
+      padding-top: 60px;
       p {
-        //padding: 0 0 2px 0;
+        font-size: 27px;
       }
     }
-    .footer-credits {
 
+    .footer-phone {
+      padding-top: 20px;
+      p {
+        font-size: 27px;
+        font-weight: 200;
+      }
+    }
+
+    .additional-info {
+      padding-top: 20px;
+      p {
+        color: $specialTextGreenColor;
+        font-size: 52px;
+        font-weight: 100;
+      }
+    }
+    .social-buttons{
+      padding: 30px;
+    }
+    .footer-credits {      
+      padding: 0px 0 5px 0;
       small {
-        font-size: 13px;
+        font-size: 14px;
         padding: 0 0 2px 0;
-        display: block;
-        &:first-child {
-          font-size: 13px;
-        }      
+        display: inline-block;
       }
       a {
         text-decoration: none;
@@ -477,11 +535,6 @@ header {
           color: $specialCarrotColor
         }
       }
-    }
-
-    p {
-      margin: 0;
-      padding: 10px 0;
     }
   }
 }
@@ -496,6 +549,10 @@ header {
     text-align: center;
     margin-left: 31px;
   }
+
+  .views-exposed-widget.views-widget-filter-field_color_type_tid {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -508,7 +565,7 @@ header {
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1400px) {
 
   .page-header {
     background-size: cover!important;

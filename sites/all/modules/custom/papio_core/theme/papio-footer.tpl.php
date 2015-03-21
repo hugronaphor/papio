@@ -1,6 +1,6 @@
 <div>
   <?php if ($footer_line_1) : ?>
-    <div class=""><p><?php print $footer_line_1; ?></p></div>
+    <div class="footer-order"><p><?php print $footer_line_1; ?></p></div>
   <?php endif; ?>
   <?php if ($footer_phone) : ?>
     <div class="footer-phone"><p><?php print $footer_phone; ?></p></div>
