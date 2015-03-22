@@ -9,6 +9,7 @@
     attach: function(context) {
       //alert('test');
       
+      // Move "All" and second link elements.
       var el1 = $('.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link:eq(0)');
       var el2 = $('.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link:eq(1)');
       

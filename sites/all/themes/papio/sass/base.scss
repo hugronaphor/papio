@@ -31,6 +31,10 @@ $specialTextGreenColor : rgb(46, 189, 170);
 $specialCarrotColor : #f26522;
 
 $arialFont : Arial, Arial, Helvetica, sans-serif;
+$Raleway: 'Raleway', sans-serif;
+
+
+$RalewayMedium: 500 'Raleway', sans-serif;
 
 
 .hidden {
@@ -83,7 +87,7 @@ header {
     text-align: center;
 
     #logo {
-        margin: 48px 0 20px 0;
+      margin: 48px 0 20px 0;
       display: inline-block;
       img {
         width: 100%;
@@ -96,13 +100,14 @@ header {
       position: relative;
       color: #000;
       display: block;
+
       p {
         text-align: center;
         background: $bodyColor;
         margin: 0 auto;
         display: inline-block;
-        padding: 5px 10px;
-        font-size: 17px;
+        padding: 9px 45px;
+        font-size: 20px;
       }
     }
 
@@ -122,7 +127,7 @@ header {
         label.global-bows-count-title {
           margin-bottom: 3px;
           display: block;
-          font-size: 28px;
+          font-size: 27px;
           font-weight: 500;
         }
         .global-bows-count-itself {
@@ -132,7 +137,7 @@ header {
             margin: 0;
             color: $specialGreenColor;
             font-family: $arialFont;
-            font-size: 27px;
+            font-size: 24px;
           }
         }
       }
@@ -184,13 +189,13 @@ header {
             bottom: 0;
             margin: auto;
             color: white;
-            font-size: 38px;
+            font-size: 30px;
             font-weight: 600;
-            background: rgba(51, 51, 51, 0.5);
+            background: rgba(241, 206, 140, 0.73);
             text-transform: uppercase;
 
             span {
-              line-height: 114px;
+              line-height: 90px;
             }
           }
         }
@@ -206,7 +211,7 @@ header {
     float: none;
     clear:both;
     overflow:hidden;
-    font-size:23px;
+    font-size:22px;
     text-transform: lowercase;
 
     .bef-select-as-links {
@@ -230,23 +235,22 @@ header {
         &.form-item-edit-color-type-all,
         &.selected-edit-color-type-all {
           a {
-            width: 43px;
-            height: 18px;
-            //margin: 0 0 0 11px;
-            top: 7px;
+            width: 31px;
+            height: 13px;
+            top: 9px;
             display: inline-block;
             position: relative;
           }
         }
 
         &.form-item-edit-color-type-all a {
-          background: url("../images/papion.png") 0 54px;
+          background: url("../images/papion.png") 0 13px;
         }
 
         &.selected-edit-color-type-all a,
         &.form-item-edit-color-type-all:hover a {
 
-          background: url("../images/papion.png") 43px 0;
+          background: url("../images/papion.png") 31px 0;
         }
       }
     }
@@ -324,8 +328,9 @@ header {
             width: 100%;
             position:absolute;
             bottom:5px;
+            left: 35px;
             .field-name-field-sku {
-              padding: 5px 0 5px 15px;
+              padding: 0px 0 0px 0px;
               position:relative;
               width:100%;
               font-size: 20px;
@@ -334,13 +339,14 @@ header {
                 content: '';
                 position: absolute;
                 width: 100%;
-                height: 20px;
+                height: 13px;
                 margin: 0px 0 0px 0;
-                margin-left: -5px;
+                margin-left: -11px;
+                margin-top: -3px;
               }
             }
             .field-name-field-price {
-              padding: 5px 0 5px 15px;
+              padding: 0px 0 5px 0px;
               font-size: 30px;
               margin-top: 7px;
             }
@@ -352,11 +358,9 @@ header {
 }
 
 .pager {
-  text-align: left;
-  margin-left: 3px; // compensate article margin
   margin-top:57px;
   font-family: $arialFont;    
-  font-size: 22px;
+  font-size: 20px;
   li {
     padding:0;
 
@@ -491,14 +495,44 @@ section.footer {
   .block {
     margin-bottom: 0;
 
+
     p {
       margin: 0;
     }
 
+    .footer-container {
+      display: inline-block;
+      position:relative;
+
+      &.lateral-container {
+        vertical-align: top;
+        top:100px;
+
+        &.left-container{
+          right:40px;
+        }
+
+        &.right-container{
+          left:40px;
+        }
+
+        .inner {
+
+          //position:absolute;
+        }
+        p {
+          font-size: 22px;
+        }
+      }
+
+    }
+
+
+
     .footer-order {
       padding-top: 60px;
       p {
-        font-size: 27px;
+        font-size: 26px;
       }
     }
 
@@ -514,7 +548,7 @@ section.footer {
       padding-top: 20px;
       p {
         color: $specialTextGreenColor;
-        font-size: 52px;
+        font-size: 50px;
         font-weight: 100;
       }
     }
@@ -530,7 +564,7 @@ section.footer {
       }
       a {
         text-decoration: none;
-        color: $specialTextGreenColor;
+        color: #fff;
         &:hover {
           color: $specialCarrotColor
         }
@@ -560,15 +594,31 @@ section.footer {
 }
 
 @media (max-width: 972px) {
-  .pager {
-    margin-left: 0;
-  }
+
 }
 
 @media (max-width: 1400px) {
 
   .page-header {
     background-size: cover!important;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .left-container{
+    right:70px;
+  }
+
+  .right-container{
+    left:70px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .lateral-container {
+    display: none!important;
   }
 }
 

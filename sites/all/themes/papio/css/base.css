@@ -1251,8 +1251,8 @@ header.page-header .header-line p {
   background: #f0f0f0;
   margin: 0 auto;
   display: inline-block;
-  padding: 5px 10px;
-  font-size: 17px;
+  padding: 9px 45px;
+  font-size: 20px;
 }
 header.page-header .header-line-two {
   margin: 15px 0 20px 0;
@@ -1271,7 +1271,7 @@ header.page-header .block-papio-core .global-bows-count {
 header.page-header .block-papio-core .global-bows-count label.global-bows-count-title {
   margin-bottom: 3px;
   display: block;
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 500;
 }
 header.page-header .block-papio-core .global-bows-count .global-bows-count-itself span {
@@ -1280,7 +1280,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   margin: 0;
   color: #0c8f7f;
   font-family: Arial, Arial, Helvetica, sans-serif;
-  font-size: 27px;
+  font-size: 24px;
 }
 
 .views-exposed-form .views-exposed-widget {
@@ -1325,13 +1325,13 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   bottom: 0;
   margin: auto;
   color: white;
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 600;
-  background: rgba(51, 51, 51, 0.5);
+  background: rgba(241, 206, 140, 0.73);
   text-transform: uppercase;
 }
 .views-exposed-widget.views-widget-filter-field_sex_tid .bef-select-as-links .form-type-bef-link a .category-title span {
-  line-height: 114px;
+  line-height: 90px;
 }
 .views-exposed-widget.views-widget-filter-field_color_type_tid {
   margin-top: 50px;
@@ -1340,7 +1340,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   float: none;
   clear: both;
   overflow: hidden;
-  font-size: 23px;
+  font-size: 22px;
   text-transform: lowercase;
 }
 .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link {
@@ -1357,17 +1357,17 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   color: #f26522;
 }
 .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.form-item-edit-color-type-all a, .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.selected-edit-color-type-all a {
-  width: 43px;
-  height: 18px;
-  top: 7px;
+  width: 31px;
+  height: 13px;
+  top: 9px;
   display: inline-block;
   position: relative;
 }
 .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.form-item-edit-color-type-all a {
-  background: url("../images/papion.png") 0 54px;
+  background: url("../images/papion.png") 0 13px;
 }
 .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.selected-edit-color-type-all a, .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link.form-item-edit-color-type-all:hover a {
-  background: url("../images/papion.png") 43px 0;
+  background: url("../images/papion.png") 31px 0;
 }
 
 .view-main-list .view-content {
@@ -1441,9 +1441,10 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   width: 100%;
   position: absolute;
   bottom: 5px;
+  left: 35px;
 }
 .view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku {
-  padding: 5px 0 5px 15px;
+  padding: 0px 0 0px 0px;
   position: relative;
   width: 100%;
   font-size: 20px;
@@ -1453,22 +1454,21 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   content: '';
   position: absolute;
   width: 100%;
-  height: 20px;
+  height: 13px;
   margin: 0px 0 0px 0;
-  margin-left: -5px;
+  margin-left: -11px;
+  margin-top: -3px;
 }
 .view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-price {
-  padding: 5px 0 5px 15px;
+  padding: 0px 0 5px 0px;
   font-size: 30px;
   margin-top: 7px;
 }
 
 .pager {
-  text-align: left;
-  margin-left: 3px;
   margin-top: 57px;
   font-family: Arial, Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 .pager li {
   padding: 0;
@@ -1580,11 +1580,28 @@ section.footer .social-buttons ul li[rel="yt"] a:hover {
 .footer .block p {
   margin: 0;
 }
+.footer .block .footer-container {
+  display: inline-block;
+  position: relative;
+}
+.footer .block .footer-container.lateral-container {
+  vertical-align: top;
+  top: 100px;
+}
+.footer .block .footer-container.lateral-container.left-container {
+  right: 40px;
+}
+.footer .block .footer-container.lateral-container.right-container {
+  left: 40px;
+}
+.footer .block .footer-container.lateral-container p {
+  font-size: 22px;
+}
 .footer .block .footer-order {
   padding-top: 60px;
 }
 .footer .block .footer-order p {
-  font-size: 27px;
+  font-size: 26px;
 }
 .footer .block .footer-phone {
   padding-top: 20px;
@@ -1598,7 +1615,7 @@ section.footer .social-buttons ul li[rel="yt"] a:hover {
 }
 .footer .block .additional-info p {
   color: #2ebdaa;
-  font-size: 52px;
+  font-size: 50px;
   font-weight: 100;
 }
 .footer .block .social-buttons {
@@ -1614,7 +1631,7 @@ section.footer .social-buttons ul li[rel="yt"] a:hover {
 }
 .footer .block .footer-credits a {
   text-decoration: none;
-  color: #2ebdaa;
+  color: #fff;
 }
 .footer .block .footer-credits a:hover {
   color: #f26522;
@@ -1638,13 +1655,22 @@ section.footer .social-buttons ul li[rel="yt"] a:hover {
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   /* portrait phones */
 }
-@media (max-width: 972px) {
-  .pager {
-    margin-left: 0;
-  }
-}
 @media (max-width: 1400px) {
   .page-header {
     background-size: cover !important;
+  }
+}
+@media (min-width: 1400px) {
+  .lateral-container.left-container {
+    right: 70px;
+  }
+
+  .lateral-container.right-container {
+    left: 70px;
+  }
+}
+@media (max-width: 1200px) {
+  .lateral-container {
+    display: none !important;
   }
 }

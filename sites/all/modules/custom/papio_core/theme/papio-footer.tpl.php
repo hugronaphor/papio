@@ -1,4 +1,10 @@
-<div>
+<div class="footer-container lateral-container left-container">
+  <div class="inner">
+    <p><img src="<?php print drupal_get_path('theme', 'papio'); ?>/images/footer/confortabil.jpg" /></p>
+    <p>confortabil</p>
+  </div>
+</div>
+<div class="footer-container">
   <?php if ($footer_line_1) : ?>
     <div class="footer-order"><p><?php print $footer_line_1; ?></p></div>
   <?php endif; ?>
@@ -29,4 +35,10 @@
     <div class="footer-credits"><p><?php print str_replace('[:current_year]', date('Y'), $footer_credits); ?></p></div>
   <?php endif; ?>
 
+</div>
+<div class="footer-container lateral-container right-container">
+  <div class="inner">
+    <p><img src="<?php print drupal_get_path('theme', 'papio'); ?>/images/footer/accesibil.jpg" /></p>
+    <p>accesibil</p>
+  </div>
 </div>
