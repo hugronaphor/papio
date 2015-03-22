@@ -1670,15 +1670,20 @@ section.footer .social-buttons ul li[rel="yt"] a:hover {
 }
 @media (min-width: 1400px) {
   .left-container {
-    right: 90px;
+    right: 130px;
   }
 
   .right-container {
-    left: 90px;
+    left: 130px;
   }
 }
 @media (max-width: 1200px) {
   .lateral-container {
     display: none !important;
+  }
+}
+@media (max-width: 380px) {
+  .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link {
+    display: block;
   }
 }

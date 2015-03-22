@@ -1,6 +1,6 @@
 3.4.9 (Selective Steve)
-0cc1d99e2c1fc0644ecba01bf1fa08b5a6cbab8b
-o:Sass::Tree::RootNode:@template"£2/**
+60c09920994911f40cfa27f36af0a21de27638ba
+o:Sass::Tree::RootNode:@template"I3/**
  * @file
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
  *
@@ -613,11 +613,11 @@ section.footer {
 @media (min-width: 1400px) {
 
   .left-container{
-    right:90px;
+    right:130px;
   }
 
   .right-container{
-    left:90px;
+    left:130px;
   }
 }
 
@@ -627,12 +627,19 @@ section.footer {
   }
 }
 
+@media (max-width: 380px) {
+  .views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link {
+    display: block;
+  }
+}
+
+
 
 :@source_rangeo:Sass::Source::Range	:@importero: Sass::Importers::Filesystem:
 @root"*/var/www/papio/sites/all/themes/papio:@same_name_warningso:Set:
 @hash{ :@real_root"*/var/www/papio/sites/all/themes/papio:
 @file"9/var/www/papio/sites/all/themes/papio/sass/base.scss:@end_poso:Sass::Source::Position:
-@linei:@offseti:@start_poso;;i;i:@options{ :@has_childrenT;i:@children[5o:Sass::Tree::CommentNode
+@linei:@offseti:@start_poso;;i;i:@options{ :@has_childrenT;i:@children[6o:Sass::Tree::CommentNode
 :@value["ı/**
  * @file
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
@@ -930,12 +937,19 @@ pager;)0;iJ;)0;iJ;)0;iJ;@;To;	;	@;@;o;;iJ;i;@V;T;U["
 cover;@;;(;o;	;	@;@;o;;i_;i ;o;;i_;i;)@;i_o;$	;o;%;"!important;@;;(;o;	;	@;@;o;;i_;i*;o;;i_;i ;)@;i_;i_;o;	;	@;@;o;;i_;i*;o;;i_;i
 ;-["background-size;@;W;X;Yo;	;	@;@;@D ;o;;i_;i;i_;[ ;Zo;	;	@;@;o;;i_;i;@E ;"[
 "(o;$	;o;%;"max-width;@;;(;o;	;	@;@;o;;i\;i;o;;i\;i;)@;i\": o;$	;o;;
-;<[ ;ix;@;=["px;>"1400px;o;	;	@;@;o;;i\;i;o;;i\;i;)@;i\")o;d;!i ;" ;o;	;	@;@;o;;ic;i!;o;;ic;i;@;T;ic;[o;K;!i ;o;	;	@;@;o;;ie;i;o;;ie;i;Lo;M;N[o;O;N[o;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i;o;;i;i;N[o;S;-"left-container;)0;ie;)0;ie;)0;ie;@;To;	;	@;@;o;;ie;i;@i ;T;U[".left-container;ie;[o;V;!i ;o;$;o;%;"	90px;@;;(;o;	;	@;@;o;;if;i;o;;if;i;if;o;	;	@;@;o;;if;i;o;;if;i
+;<[ ;ix;@;=["px;>"1400px;o;	;	@;@;o;;i\;i;o;;i\;i;)@;i\")o;d;!i ;" ;o;	;	@;@;o;;ic;i!;o;;ic;i;@;T;ic;[o;K;!i ;o;	;	@;@;o;;ie;i;o;;ie;i;Lo;M;N[o;O;N[o;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i;o;;i;i;N[o;S;-"left-container;)0;ie;)0;ie;)0;ie;@;To;	;	@;@;o;;ie;i;@i ;T;U[".left-container;ie;[o;V;!i ;o;$;o;%;"
+130px;@;;(;o;	;	@;@;o;;if;i;o;;if;i;if;o;	;	@;@;o;;if;i;o;;if;i
 ;-["
-right;@;W;X;Yo;	;	@;@;@Ñ ;o;;if;i;if;[ ;Zo;	;	@;@;o;;if;i;@Ö o;K;!i ;o;	;	@;@;o;;ii;i;o;;ii;i;Lo;M;N[o;O;N[o;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i;o;;i;i;N[o;S;-"right-container;)0;ii;)0;ii;)0;ii;@;To;	;	@;@;o;;ii;i;@ê ;T;U[".right-container;ii;[o;V;!i ;o;$;o;%;"	90px;@;;(;o;	;	@;@;o;;ij;i;o;;ij;i;ij;o;	;	@;@;o;;ij;i;o;;ij;i
+right;@;W;X;Yo;	;	@;@;@Ñ ;o;;if;i;if;[ ;Zo;	;	@;@;o;;if;i;@Ö o;K;!i ;o;	;	@;@;o;;ii;i;o;;ii;i;Lo;M;N[o;O;N[o;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i;o;;i;i;N[o;S;-"right-container;)0;ii;)0;ii;)0;ii;@;To;	;	@;@;o;;ii;i;@ê ;T;U[".right-container;ii;[o;V;!i ;o;$;o;%;"
+130px;@;;(;o;	;	@;@;o;;ij;i;o;;ij;i;ij;o;	;	@;@;o;;ij;i;o;;ij;i
 ;-["	left;@;W;X;Yo;	;	@;@;@´ ;o;;ij;i;ij;[ ;Zo;	;	@;@;o;;ij;i;@¨ ;"[
 "(o;$	;o;%;"min-width;@;;(;o;	;	@;@;o;;ic;i;o;;ic;i;)@;ic": o;$	;o;;
 ;<[ ;ix;@;=["px;>"1400px;o;	;	@;@;o;;ic;i;o;;ic;i;)@;ic")o;d;!i ;" ;o;	;	@;@;o;;in;i!;o;;in;i;@;T;in;[o;K;!i ;o;	;	@;@;o;;io;i;o;;io;i;Lo;M;N[o;O;N[o;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i;o;;i;i;N[o;S;-"lateral-container;)0;io;)0;io;)0;io;@;To;	;	@;@;o;;io;i;@– ;T;U[".lateral-container;io;[o;V;!i ;o;E;o;	;	@;@;o;;ip;i!;o;;ip;i;@;F;J;)@;H[o;$	;o;%;"	none;@;;(;o;	;	@;@;o;;ip;i;o;;ip;i;)@;ipo;$	;o;%;"!important;@;;(;o;	;	@;@;o;;ip;i!;o;;ip;i;)@;ip;ip;o;	;	@;@;o;;ip;i!;o;;ip;i
 ;-["display;@;W;X;Yo;	;	@;@;@ˆ ;o;;ip;i;ip;[ ;Zo;	;	@;@;o;;ip;i;@˜ ;"[
 "(o;$	;o;%;"max-width;@;;(;o;	;	@;@;o;;in;i;o;;in;i;)@;in": o;$	;o;;
-;<[ ;i∞;@;=["px;>"1200px;o;	;	@;@;o;;in;i;o;;in;i;)@;in")
+;<[ ;i∞;@;=["px;>"1200px;o;	;	@;@;o;;in;i;o;;in;i;)@;in")o;d;!i ;" ;o;	;	@;@;o;;it;i ;o;;it;i;@;T;it;[o;K;!i ;o;	;	@;@;o;;iu;ip;o;;iu;i;Lo;M;N[o;O;N[o;P;Qo;;{ ;R0;o;	;	0;0;o;;i;iD;o;;i;i;N[o;S;-"views-exposed-widget;)0;iuo;S;-"-views-widget-filter-field_color_type_tid;)0;iu;)0;iuo;P;Qo;;{ ;R0;o;	;	0;0;o;;i;iY;o;;i;iE;N[o;S;-"bef-select-as-links;)0;iu;)0;iuo;P;Qo;;{ ;R0;o;	;	0;0;o;;i;im;o;;i;iZ;N[o;S;-"form-type-bef-link;)0;iu;)0;iu;)0;iu;@;To;	;	@;@;o;;iu;ip;@!;T;U["l.views-exposed-widget.views-widget-filter-field_color_type_tid .bef-select-as-links .form-type-bef-link;iu;[o;V;!i ;o;$;o;%;"
+block;@;;(;o;	;	@;@;o;;iv;i;o;;iv;i;iv;o;	;	@;@;o;;iv;i;o;;iv;i
+;-["display;@;W;X;Yo;	;	@;@;@J!;o;;iv;i;iv;[ ;Zo;	;	@;@;o;;iv;i;@K!;"[
+"(o;$	;o;%;"max-width;@;;(;o;	;	@;@;o;;it;i;o;;it;i;)@;it": o;$	;o;;
+;<[ ;i|;@;=["px;>"
+380px;o;	;	@;@;o;;it;i;o;;it;i;)@;it")
