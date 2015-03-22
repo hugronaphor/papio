@@ -21,8 +21,11 @@
   Drupal.behaviors.generalItemHover = {
     attach: function(context) {
 
+$('.views-widget-filter-field_sex_tid .bef-select-as-links-selected').find('.category-title').removeClass('hidden');
+
+
       // Animate text on hover for exposed filters.
-      $('.views-widget-filter-field_sex_tid .form-type-bef-link a').hover(
+      $('.views-widget-filter-field_sex_tid .form-type-bef-link:not(.bef-select-as-links-selected) a').hover(
         function() {
           $(this).find('.category-title').removeClass('hidden');
         }, function() {

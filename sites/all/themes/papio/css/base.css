@@ -1288,6 +1288,10 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   padding: 0;
 }
 
+.view-empty {
+  text-align: center;
+}
+
 .views-exposed-widget {
   text-align: center;
 }
@@ -1300,7 +1304,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   *display: inline;
   vertical-align: top;
   padding: 0;
-  margin: 4px 5px;
+  margin: 3px 12px;
   padding: 0;
   /*margin:0;*/
 }
@@ -1502,7 +1506,7 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 }
 .social-buttons ul li a {
   text-decoration: none;
-  margin: 4px;
+  margin: 4px 10px;
   /*padding: 5px 20px 5px 20px;*/
   color: #85848a;
   background: none;
@@ -1589,13 +1593,17 @@ section.footer .social-buttons ul li[rel="yt"] a:hover {
   top: 100px;
 }
 .footer .block .footer-container.lateral-container.left-container {
-  right: 40px;
+  right: 50px;
 }
 .footer .block .footer-container.lateral-container.right-container {
-  left: 40px;
+  left: 50px;
 }
 .footer .block .footer-container.lateral-container p {
   font-size: 22px;
+  font-weight: 300;
+}
+.footer .block .footer-container.lateral-container p.text {
+  margin-top: 6px;
 }
 .footer .block .footer-order {
   padding-top: 60px;
@@ -1611,7 +1619,7 @@ section.footer .social-buttons ul li[rel="yt"] a:hover {
   font-weight: 200;
 }
 .footer .block .additional-info {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .footer .block .additional-info p {
   color: #2ebdaa;
@@ -1619,7 +1627,7 @@ section.footer .social-buttons ul li[rel="yt"] a:hover {
   font-weight: 100;
 }
 .footer .block .social-buttons {
-  padding: 30px;
+  padding: 10px 0 30px 0;
 }
 .footer .block .footer-credits {
   padding: 0px 0 5px 0;
@@ -1661,12 +1669,12 @@ section.footer .social-buttons ul li[rel="yt"] a:hover {
   }
 }
 @media (min-width: 1400px) {
-  .lateral-container.left-container {
-    right: 70px;
+  .left-container {
+    right: 90px;
   }
 
-  .lateral-container.right-container {
-    left: 70px;
+  .right-container {
+    left: 90px;
   }
 }
 @media (max-width: 1200px) {

@@ -151,6 +151,9 @@ header {
   padding: 0;
 }
 
+.view-empty {
+  text-align: center;
+}
 .views-exposed-widget {
   text-align:center;
 
@@ -165,7 +168,7 @@ header {
         *display: inline;
         vertical-align: top;
         padding:0;
-        margin: 4px 5px;
+        margin: 3px 12px;
         padding:0;
         /*margin:0;*/
 
@@ -397,7 +400,7 @@ header {
     display: inline;
     a {
       text-decoration: none;
-      margin: 4px;
+      margin: 4px 10px;
       /*padding: 5px 20px 5px 20px;*/
       color: #85848a;
       background: none;
@@ -509,11 +512,11 @@ section.footer {
         top:100px;
 
         &.left-container{
-          right:40px;
+          right:50px;
         }
 
         &.right-container{
-          left:40px;
+          left:50px;
         }
 
         .inner {
@@ -522,12 +525,13 @@ section.footer {
         }
         p {
           font-size: 22px;
+          font-weight: 300;
+          &.text {
+            margin-top: 6px;
+          }
         }
       }
-
     }
-
-
 
     .footer-order {
       padding-top: 60px;
@@ -545,7 +549,7 @@ section.footer {
     }
 
     .additional-info {
-      padding-top: 20px;
+      padding-top: 30px;
       p {
         color: $specialTextGreenColor;
         font-size: 50px;
@@ -553,7 +557,7 @@ section.footer {
       }
     }
     .social-buttons{
-      padding: 30px;
+      padding: 10px 0 30px 0;
     }
     .footer-credits {      
       padding: 0px 0 5px 0;
@@ -607,14 +611,13 @@ section.footer {
 @media (min-width: 1400px) {
 
   .left-container{
-    right:70px;
+    right:90px;
   }
 
   .right-container{
-    left:70px;
+    left:90px;
   }
 }
-
 
 @media (max-width: 1200px) {
   .lateral-container {
