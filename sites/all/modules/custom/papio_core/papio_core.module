@@ -15,7 +15,7 @@ function papio_core_menu() {
     'description' => "Configure your sitewide Papio settings.",
     'page callback' => 'drupal_get_form',
     'page arguments' => array('papio_core_admin_form'),
-    'access arguments' => array('administer site'),
+    'access arguments' => array('administer nodes'),
     'file' => 'papio_core.admin.inc',
     'weight' => 5,
   );
