@@ -1226,7 +1226,6 @@ header.page-header {
   background-repeat: no-repeat;
   background-color: #f0f0f0;
   background-position: center;
-  background-size: 100%;
   margin: 0;
   padding: 10px 40px;
   color: #fff;
@@ -1662,11 +1661,6 @@ section.footer .social-buttons ul li[rel="yt"] a:hover {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   /* portrait phones */
-}
-@media (max-width: 1400px) {
-  .page-header {
-    background-size: cover !important;
-  }
 }
 @media (min-width: 1400px) {
   .left-container {
