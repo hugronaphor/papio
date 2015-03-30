@@ -212,15 +212,11 @@ function fibonacci($n) {
 }
 
 function papio_core_preprocess_html(&$vars) {
-
-  drupal_add_js(drupal_get_path('theme', 'papio') . '/js/jquery.wookmark.js');
-
-
   $bing_tag = array(
     '#tag' => 'meta', // The #tag is the html tag - <link />
     '#attributes' => array(
       'name' => 'msvalidate.01',
-      'content' => 'put your bing_search_index code here.',
+      'content' => '928E27FFA2965BE123AA1329BF14A5BE',
     ),
   );
 
