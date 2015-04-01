@@ -6,3 +6,5 @@ sites/*/files
 sites/*/private
 
 **.sass-cache**
+
+sites/all/themes/papio/.sass_cache/*

@@ -583,6 +583,24 @@ section.footer {
     position: relative;
     right:0;
   }
+
+  header.page-header #logo {
+    margin: 0px 0 5px 0;
+  }
+
+  header.page-header .block-papio-core {
+    margin-top: 20px;
+  }
+  header.page-header .header-line p {
+    font-size: 18px;
+  }
+  header.page-header .block-papio-core .global-bows-count label.global-bows-count-title {
+    font-size: 25px;
+  }
+  header.page-header .block-papio-core .global-bows-count {
+    font-size: 12px;
+  }
+
   .pager {
     text-align: center;
     margin-left: 31px;
@@ -595,6 +613,8 @@ section.footer {
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   /* portrait phones */
+
+
 }
 
 @media (max-width: 972px) {
