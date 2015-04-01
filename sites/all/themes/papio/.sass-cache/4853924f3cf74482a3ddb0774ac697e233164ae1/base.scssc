@@ -1,5 +1,5 @@
 3.4.9 (Selective Steve)
-869f32741f894be508bc4709f6b8c5e761aad6ee
+138b5de8217eb2e486451dbc75979cb66d500047
 o:Sass::Tree::RootNode:@template"5/**
  * @file
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
@@ -587,7 +587,7 @@ section.footer {
   }
 
   header.page-header {  
-    background-position-x: -1250px;
+    background-position-x: -1160px;
   }
 
   header.page-header #logo {
@@ -944,7 +944,7 @@ hover;`;a;)0;b0;i<;c0;)0;i<;)0;i<;@;To;	;	@;@;o;;i<;i;@
 color;@;W;X;Yo;	;	@;@;@ë;o;;i=;i;i=;[ ;Zo;	;	@;@;o;;i=;i;@ìo;d;!i ;" ;o;	;	@;@;o;;iE;i0;o;;iE;i;@;T;iE;[o;K;!i ;o;	;	@;@;o;;iF;i@;o;;iF;i;Lo;M;N[o;O;N[o;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i;o;;i;i;N[o;[	;\0;-"header;)0;iFo;S;-"page-header;)0;iF;)0;iFo;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i*;o;;i;i;N[o;S;-"block-papio-core;)0;iF;)0;iFo;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i=;o;;i;i+;N[o;S;-"global-bows-count;)0;iF;)0;iF;)0;iF;@;To;	;	@;@;o;;iF;i@;@ý;T;U["<header.page-header .block-papio-core .global-bows-count;iF;[o;V;!i ;o;$;o;%;"relative;@;;(;o;	;	@;@;o;;iG;i;o;;iG;i;iG;o;	;	@;@;o;;iG;i;o;;iG;i
 ;-["position;@;W;X;Yo;	;	@;@;@,;o;;iG;i;iG;[ ;Zo;	;	@;@;o;;iG;i;@-o;V;!i ;o;$;o;%;"0;@;;(;o;	;	@;@;o;;iH;i;o;;iH;i;iH;o;	;	@;@;o;;iH;i;o;;iH;i
 ;-["
-right;@;W;X;Yo;	;	@;@;@=;o;;iH;i;iH;[ ;Zo;	;	@;@;o;;iH;i;@>o;K;!i ;o;	;	@;@;o;;iK;i;o;;iK;i;Lo;M;N[o;O;N[o;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i;o;;i;i;N[o;[	;\0;-"header;)0;iKo;S;-"page-header;)0;iK;)0;iK;)0;iK;@;To;	;	@;@;o;;iK;i;@I;T;U["header.page-header;iK;[o;V;!i ;o;$;o;%;"-1250px;@;;(;o;	;	@;@;o;;iL;i(;o;;iL;i!;iL;o;	;	@;@;o;;iL;i(;o;;iL;i
+right;@;W;X;Yo;	;	@;@;@=;o;;iH;i;iH;[ ;Zo;	;	@;@;o;;iH;i;@>o;K;!i ;o;	;	@;@;o;;iK;i;o;;iK;i;Lo;M;N[o;O;N[o;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i;o;;i;i;N[o;[	;\0;-"header;)0;iKo;S;-"page-header;)0;iK;)0;iK;)0;iK;@;To;	;	@;@;o;;iK;i;@I;T;U["header.page-header;iK;[o;V;!i ;o;$;o;%;"-1160px;@;;(;o;	;	@;@;o;;iL;i(;o;;iL;i!;iL;o;	;	@;@;o;;iL;i(;o;;iL;i
 ;-["background-position-x;@;W;X;Yo;	;	@;@;@f;o;;iL;i!;iL;[ ;Zo;	;	@;@;o;;iL;i;@go;K;!i ;o;	;	@;@;o;;iO;i!;o;;iO;i;Lo;M;N[o;O;N[o;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i;o;;i;i;N[o;[	;\0;-"header;)0;iOo;S;-"page-header;)0;iO;)0;iOo;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i;o;;i;i;N[o;g;-"	logo;)0;iO;)0;iO;)0;iO;@;To;	;	@;@;o;;iO;i!;@r;T;U["header.page-header #logo;iO;[o;V;!i ;o;$;o;%;"0px 0 5px 0;@;;(;o;	;	@;@;o;;iP;i;o;;iP;i;iP;o;	;	@;@;o;;iP;i;o;;iP;i
 ;-["margin;@;W;X;Yo;	;	@;@;@˜;o;;iP;i;iP;[ ;Zo;	;	@;@;o;;iP;i;@™o;K;!i ;o;	;	@;@;o;;iS;i-;o;;iS;i;Lo;M;N[o;O;N[o;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i;o;;i;i;N[o;[	;\0;-"header;)0;iSo;S;-"page-header;)0;iS;)0;iSo;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i*;o;;i;i;N[o;S;-"block-papio-core;)0;iS;)0;iS;)0;iS;@;To;	;	@;@;o;;iS;i-;@¤;T;U[")header.page-header .block-papio-core;iS;[o;V;!i ;o;$;o;%;"	20px;@;;(;o;	;	@;@;o;;iT;i;o;;iT;i;iT;o;	;	@;@;o;;iT;i;o;;iT;i
 ;-["margin-top;@;W;X;Yo;	;	@;@;@Ê;o;;iT;i;iT;[ ;Zo;	;	@;@;o;;iT;i;@Ëo;K;!i ;o;	;	@;@;o;;iV;i*;o;;iV;i;Lo;M;N[o;O;N[o;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i;o;;i;i;N[o;[	;\0;-"header;)0;iVo;S;-"page-header;)0;iV;)0;iVo;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i%;o;;i;i;N[o;S;-"header-line;)0;iV;)0;iVo;P;Qo;;{ ;R0;o;	;	0;0;o;;i;i';o;;i;i&;N[o;[	;\0;-"p;)0;iV;)0;iV;)0;iV;@;To;	;	@;@;o;;iV;i*;@Ö;T;U["&header.page-header .header-line p;iV;[o;V;!i ;o;$;o;%;"	18px;@;;(;o;	;	@;@;o;;iW;i;o;;iW;i;iW;o;	;	@;@;o;;iW;i;o;;iW;i
