@@ -260,7 +260,7 @@ header {
   }
 }
 
-.view-main-list {
+.view-main-list, .view-id-photo_list {
   .view-content {
     text-align: center;
     margin: 40px auto 0 auto;
@@ -359,6 +359,14 @@ header {
     }
   }
 }
+
+// <Start> Specific Mereni Photo styles.
+.page-mereni {
+  .page-title {
+    text-align: center;
+  }
+}
+// <End> Specific Mereni Photo styles.
 
 .pager {
   margin-top:57px;

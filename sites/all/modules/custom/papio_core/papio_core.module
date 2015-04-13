@@ -231,7 +231,7 @@ function papio_core_preprocess_page(&$variables) {
   }
   if ($header_line_2 = variable_get('header_line_2')) {
     $variables['header_line_2'] = $header_line_2;
-  }
+  }  
 }
 
 //function papio_core_form_alter(&$form, &$form_state, $form_id);
@@ -239,7 +239,6 @@ function papio_core_preprocess_page(&$variables) {
 function papio_core_preprocess_views_view(&$vars) {
   $view = &$vars['view'];
   if ($view->name == 'main_list' && $view->current_display == 'main_list') {
-
-    //dsm($view);
+    //dsm($view, 'main list view');
   }
 }

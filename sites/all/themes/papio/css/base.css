@@ -1373,12 +1373,12 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   background: url("../images/papion.png") 31px 0;
 }
 
-.view-main-list .view-content {
+.view-main-list .view-content, .view-id-photo_list .view-content {
   text-align: center;
   margin: 40px auto 0 auto;
   width: 100%;
 }
-.view-main-list .view-content .views-row {
+.view-main-list .view-content .views-row, .view-id-photo_list .view-content .views-row {
   text-align: left;
   display: inline-block;
   font-size: 0;
@@ -1389,14 +1389,14 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   padding: 0;
   margin: 4px 3px;
 }
-.view-main-list .view-content .views-row article {
+.view-main-list .view-content .views-row article, .view-id-photo_list .view-content .views-row article {
   position: relative;
   cursor: default;
 }
-.view-main-list .view-content .views-row article .group-main-initial {
+.view-main-list .view-content .views-row article .group-main-initial, .view-id-photo_list .view-content .views-row article .group-main-initial {
   overflow: hidden;
 }
-.view-main-list .view-content .views-row article .group-main-initial .field-name-field-new {
+.view-main-list .view-content .views-row article .group-main-initial .field-name-field-new, .view-id-photo_list .view-content .views-row article .group-main-initial .field-name-field-new {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -1410,23 +1410,23 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   color: #fff;
   font-weight: 300;
 }
-.view-main-list .view-content .views-row article .group-main-initial .field-name-field-new.on-top {
+.view-main-list .view-content .views-row article .group-main-initial .field-name-field-new.on-top, .view-id-photo_list .view-content .views-row article .group-main-initial .field-name-field-new.on-top {
   top: 0;
 }
-.view-main-list .view-content .views-row article .group-main-initial .field-name-field-new.on-bottom {
+.view-main-list .view-content .views-row article .group-main-initial .field-name-field-new.on-bottom, .view-id-photo_list .view-content .views-row article .group-main-initial .field-name-field-new.on-bottom {
   bottom: 0;
 }
-.view-main-list .view-content .views-row article .group-main-initial .field-name-field-image {
+.view-main-list .view-content .views-row article .group-main-initial .field-name-field-image, .view-id-photo_list .view-content .views-row article .group-main-initial .field-name-field-image {
   font-size: 0;
 }
-.view-main-list .view-content .views-row article .group-main-initial .field-name-field-image .field-item {
+.view-main-list .view-content .views-row article .group-main-initial .field-name-field-image .field-item, .view-id-photo_list .view-content .views-row article .group-main-initial .field-name-field-image .field-item {
   text-align: center;
 }
-.view-main-list .view-content .views-row article .group-main-initial .field-name-field-image .field-item img {
+.view-main-list .view-content .views-row article .group-main-initial .field-name-field-image .field-item img, .view-id-photo_list .view-content .views-row article .group-main-initial .field-name-field-image .field-item img {
   width: 100%;
   max-width: 280px;
 }
-.view-main-list .view-content .views-row article .group-overlay-data {
+.view-main-list .view-content .views-row article .group-overlay-data, .view-id-photo_list .view-content .views-row article .group-overlay-data {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1440,19 +1440,19 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   background: rgba(51, 51, 51, 0.5);
   font-family: Arial, Arial, Helvetica, sans-serif;
 }
-.view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper {
+.view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper, .view-id-photo_list .view-content .views-row article .group-overlay-data .field-group-format-wrapper {
   width: 100%;
   position: absolute;
   bottom: 5px;
   left: 35px;
 }
-.view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku {
+.view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku, .view-id-photo_list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku {
   padding: 0px 0 0px 0px;
   position: relative;
   width: 100%;
   font-size: 20px;
 }
-.view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku:after {
+.view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku:after, .view-id-photo_list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku:after {
   background: url("../images/price_bg.png") no-repeat;
   content: '';
   position: absolute;
@@ -1462,10 +1462,14 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   margin-left: -11px;
   margin-top: -3px;
 }
-.view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-price {
+.view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-price, .view-id-photo_list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-price {
   padding: 0px 0 5px 0px;
   font-size: 30px;
   margin-top: 7px;
+}
+
+.page-mereni .page-title {
+  text-align: center;
 }
 
 .pager {
