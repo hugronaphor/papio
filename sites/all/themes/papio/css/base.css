@@ -1443,8 +1443,8 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
 .view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper, .view-id-photo_list .view-content .views-row article .group-overlay-data .field-group-format-wrapper {
   width: 100%;
   position: absolute;
-  bottom: 5px;
-  left: 35px;
+  bottom: 10px;
+  left: 15px;
 }
 .view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku, .view-id-photo_list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku {
   padding: 0px 0 0px 0px;
@@ -1452,16 +1452,16 @@ header.page-header .block-papio-core .global-bows-count .global-bows-count-itsel
   width: 100%;
   font-size: 20px;
 }
-.view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku:after, .view-id-photo_list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku:after {
-  background: url("../images/price_bg.png") no-repeat;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 13px;
-  margin: 0px 0 0px 0;
-  margin-left: -11px;
-  margin-top: -3px;
-}
+/*.view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku:after, .view-id-photo_list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-sku:after {*/
+  /*background: url("../images/price_bg.png") no-repeat;*/
+  /*content: '';*/
+  /*position: absolute;*/
+  /*width: 100%;*/
+  /*height: 13px;*/
+  /*margin: 0px 0 0px 0;*/
+  /*margin-left: -11px;*/
+  /*margin-top: -3px;*/
+/*}*/
 .view-main-list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-price, .view-id-photo_list .view-content .views-row article .group-overlay-data .field-group-format-wrapper .field-name-field-price {
   padding: 0px 0 5px 0px;
   font-size: 30px;
