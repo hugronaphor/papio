@@ -37,6 +37,12 @@
       </div> <!-- /.name-and-slogan -->
     <?php endif; ?>
 
+    <div class="kickstarter-wrapper">
+      <a href="javascript:void(0)">
+        <img src="/sites/all/themes/papio/images/kickstarter.png" alt="Kickstarter"/>
+      </a>
+    </div>
+
 <!--    --><?php //if (isset($header_line_1)): ?>
 <!--      <div class="header-line header-line-one"><p>--><?php //print $header_line_1; ?><!--</p></div>-->
 <!--    --><?php //endif; ?>
