@@ -337,16 +337,16 @@ header {
               position:relative;
               width:100%;
               font-size: 20px;
-              &:after {
-                background: url("../images/price_bg.png") no-repeat;
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 13px;
-                margin: 0px 0 0px 0;
-                margin-left: -11px;
-                margin-top: -3px;
-              }
+              //&:after {
+              //  background: url("../images/price_bg.png") no-repeat;
+              //  content: '';
+              //  position: absolute;
+              //  width: 100%;
+              //  height: 13px;
+              //  margin: 0px 0 0px 0;
+              //  margin-left: -11px;
+              //  margin-top: -3px;
+              //}
             }
             .field-name-field-price {
               padding: 0px 0 5px 0px;

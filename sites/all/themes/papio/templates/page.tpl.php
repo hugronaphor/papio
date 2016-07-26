@@ -37,13 +37,13 @@
       </div> <!-- /.name-and-slogan -->
     <?php endif; ?>
 
-    <?php if (isset($header_line_1)): ?>
-      <div class="header-line header-line-one"><p><?php print $header_line_1; ?></p></div>
-    <?php endif; ?>
-
-    <?php if (isset($header_line_2)): ?>
-      <div class="header-line header-line-two"><p><?php print $header_line_2; ?></p></div>
-    <?php endif; ?>
+<!--    --><?php //if (isset($header_line_1)): ?>
+<!--      <div class="header-line header-line-one"><p>--><?php //print $header_line_1; ?><!--</p></div>-->
+<!--    --><?php //endif; ?>
+<!---->
+<!--    --><?php //if (isset($header_line_2)): ?>
+<!--      <div class="header-line header-line-two"><p>--><?php //print $header_line_2; ?><!--</p></div>-->
+<!--    --><?php //endif; ?>
 
 
     <?php print render($page['header']); ?>
