@@ -55,6 +55,18 @@ function papio_core_admin_form() {
     '#default_value' => variable_get('footer_line_2'),
   );
 
+  $form['footer']['footer_left_img_text'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Footer Left img text'),
+    '#default_value' => variable_get('footer_left_img_text'),
+  );
+
+  $form['footer']['footer_right_img_text'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Footer Right img text'),
+    '#default_value' => variable_get('footer_right_img_text'),
+  );
+
   $form['footer']['footer_facebook_site_url'] = array(
     '#type' => 'textfield',
     '#title' => t('Facebook Site URL'),

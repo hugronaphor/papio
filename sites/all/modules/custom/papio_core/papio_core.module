@@ -56,6 +56,8 @@ function papio_core_block_view($delta = '') {
         'footer_line_1',
         'footer_phone',
         'footer_line_2',
+        'footer_left_img_text',
+        'footer_right_img_text',
         'footer_facebook_site_url',
         'footer_twitter_site_url',
         'footer_youtube_site_url',

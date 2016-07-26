@@ -1,7 +1,7 @@
 <div class="footer-container lateral-container left-container">
   <div class="inner">
     <p><img src="<?php print drupal_get_path('theme', 'papio'); ?>/images/footer/confortabil.jpg" /></p>
-    <p class="text">confortabil</p>
+    <p class="text"><?php print $footer_left_img_text; ?></p>
   </div>
 </div>
 <div class="footer-container">
@@ -39,6 +39,6 @@
 <div class="footer-container lateral-container right-container">
   <div class="inner">
     <p><img src="<?php print drupal_get_path('theme', 'papio'); ?>/images/footer/accesibil.jpg" /></p>
-    <p class="text">accesibil</p>
+    <p class="text"><?php print $footer_right_img_text; ?></p>
   </div>
 </div>
